@@ -1,0 +1,780 @@
+{
+ "bodyweight" : {
+
+  "back": [
+   {
+    "name": "Pull up",
+    "photo" : "pull_up.png",
+    "others_muscles_worked": ["biceps", "shoulder", "forearm", "traps"],
+    "description": "Leap up and grip the bar (pronation grip) with your hands shoulder width apart and your palms facing away from you. Pull (by closing your elbow to your to down) your body to aim your chin touch the bar"
+
+   },
+
+   {
+    "name": "Chin up",
+    "photo" : "chin_up.png",
+    "others_muscles_worked": ["biceps", "shoulder", "forearm", "traps"],
+    "description": "Leap up and grip the bar (supination grip) with your hands shoulder width apart and your palms facing away from you. Pull (by closing your elbow to your to down) your body to aim your chin touch the bar"
+   },
+
+   {
+    "name": "Row back",
+    "photo" : "rowing.png",
+    "others_muscles_worked": ["biceps", "shoulder", "forearm", "traps"],
+    "description": "Place a barbell at about hip height on a power rack or Smith machine. Lower yourself under the bar, then grab the bar with an overhand (pronated) grip with your hands at about shoulder width apart. Straighten your arms to hang from the bar. Straighten out your legs for more of a challenge. Squeeze your shoulder blades and upper back together to pull your chest up to the bar. Pause at the top position, squeezing your core and glutes to keep your body straight if your legs are fully extended, then straighten your arms to return to the starting position."
+   }
+  ],
+
+  "lower_back": [
+
+   {
+    "name": "Hyper extension",
+    "photo" : "Hyperextension.png",
+    "others_muscles_worked": ["leg", "back"],
+    "description": "Position yourself on a Roman Chair facing forward. If you are not sure what a Roman Chair is, ask a trainer at your gym to point one out to you. Cross your arms in front of your chest and slowly lower your upper body down and try to touch your nose to the floor. Once your torso is completely bent over and virtually perpendicular to the floor, slowly return to the starting position and repeat. Be sure that when you return to the starting position that you do not go past parallel and arch your back at the top."
+   }
+  ],
+
+  "chest": [
+   {
+    "name": "Dips",
+    "photo" : "dips.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Dips is done on a set of parallel bars. Mount them by placing one hand on each bar, hovering your legs off the ground by linking the ankles and bending the knees and hips slightly. Start with your arms extended, then lean slightly forward from the hips to drive weight into the chest as you bend the elbows. When your upper arms are about parallel to the floor and you feel a slight stretch in your chest, extend the elbows to return to start."
+   },
+
+   {
+    "name": "Push up",
+    "photo" : "push_up.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Place your hands on the floor so they’re slightly outside shoulder-width. Spread your fingers slightly out and have them pointed forward. Raise up onto your toes so that all of your body weight is on your hands and your feet. Contract your abdominals to keep your torso in a straight line and prevent arching your back or pointing your bottom in the air. Bend your elbows and lower your chest down toward the floor. Once your elbows bend slightly beyond 90 degrees, push off the floor and extend them so that you return to starting position."
+   }
+  ],
+
+  "shoulder": [
+
+   {
+    "name": "Face pull",
+    "photo" : "face_pull.png",
+    "others_muscles_worked": ["biceps", "forearm", "traps"],
+    "description": "Grab a Smith machine or set up a bar in a power rack. Adjust the height of the bar based on your strength level (lower is harder). Drape a triceps rope over the bar. Longer ropes are better than shorter ropes if you have the option. Grip the bar with a standard grip – palms facing your feet – or reverse grip as shown in the video. This allows you to bring in more external rotation. Get your body into a plank position and pull yourself up while aiming your fists for your temples. Squeeze your upper back hard and lower under control."
+   }
+
+  ],
+
+  "leg": [
+   {
+    "name": "Squat",
+    "photo" : "squat.png",
+    "others_muscles_worked": ["lower_back", "calf"],
+    "description": "Set your feet shoulder-width apart, toes slightly turned out. Pull in your lower abs, and keep your eyes forward. Slowly bend at the knees and drop your hips to lower your body. Keep your heels flat on the floor. At the bottom of the exercise pause for a moment and strongly push back up to the starting position, mirroring the descent."
+   },
+
+   {
+    "name": "Lunge",
+    "photo" : "lunge.png",
+    "others_muscles_worked": ["lower_back", "calf"],
+    "description": "Stand straight on a firm surface. Your feet should be kept a few inches apart. Your upper body should be upright at starting position, and remain upright throughout. Pick your right foot up and step forwards slowly. Lower your hips, and bend your right knee until it is positioned at a 90 degree angle. Your front knee must not push out over your ankle, and your back knee should not be touching the floor. Ensure that your movements are slow, so that your back knee does not touch the floor. Put your weight in your heels, and push yourself up to starting position. Repeat with left leg up front."
+   }
+  ],
+
+  "calf": [
+   {
+    "name": "Calf extension",
+    "photo" : "calf_extention.png",
+    "others_muscles_worked": [],
+    "description": "To perform the exercise, step forward onto a calf block or a similar raised platform, setting the balls of your feet on the block and leaving the rest of your feet hanging over the edge. Begin by flexing your feet to lift your heels as high as you can. Descend slowly and allow your heels to drop a bit below the level of the block to complete one repetition. Keep your knees and back as straight as you can and perform the exercise with smooth, fluid movements."
+   }
+  ],
+
+  "biceps": [
+   {
+    "name": "Chin up biceps",
+    "photo" : "chin_up_biceps.png",
+    "others_muscles_worked": ["back", "forearm", "shoulder", "traps"],
+    "description": "Leap up and grip the bar (supination grip) with your hands shoulder width apart and your palms facing away from you. Pull (by flexing your forearm) your body to aim your chin touch the bar"
+   }
+  ],
+
+  "triceps": [
+
+   {
+    "name": "Bodyweight skull crushers",
+    "photo" : "skull_crushers.png",
+    "others_muscles_worked": [],
+    "description": "One you grip the barbell, Keep your upper arms perpendicular to the floor, not necessarily perpendicular to your body and ONLY extend your elbows until short or full extension."
+   },
+
+   {
+    "name": "Close push up",
+    "photo" : "close_push_up.png",
+    "others_muscles_worked": ["chest", "shoulder"],
+    "description": "Place your elbows close to your body and the hand on the floor. Spread your fingers slightly out and have them pointed forward. Raise up onto your toes so that all of your body weight is on your hands and your feet. Contract your abdominals to keep your torso in a straight line and prevent arching your back or pointing your bottom in the air. Bend your elbows and lower your chest down toward the floor. Once your elbows bend slightly beyond 90 degrees, push off the floor by extending your triceps so that you return to starting position."
+   },
+
+   {
+    "name": "Dips triceps",
+    "photo" : "dips_triceps.png",
+    "others_muscles_worked": ["chest", "shoulder"],
+    "description": "Dips is done on a set of parallel bars. Mount them by placing one hand on each bar and elbow (must always) close to the body, hovering your legs off the ground by linking the ankles and bending the knees and hips slightly. Start with your arms extended, then lean slightly forward from the hips to drive weight into the chest as you bend the elbows. When your upper arms are about parallel to the floor and you feel a slight stretch in your chest, extend the elbows to return to start."
+
+   },
+
+   {
+    "name": "Reverse dips",
+    "photo" : "reverse_dips.png",
+    "others_muscles_worked": ["chest", "shoulder"],
+    "description": "Stand with your back to a stable bench, couch or chair and place your hands on the object behind you. Move your feet forward until your legs are straight and at a 4 45-degree angle to the floor. Then push yourself with your triceps until your arms are straight"
+   }
+  ],
+
+  "abs": [
+   {
+    "name": "Crunch",
+    "photo" : "crunch.png",
+    "others_muscles_worked": [],
+    "description": "Lie on your back on the floor, bend your knees and Cross your arms in front of your chest. Lift your shoulders towards the ceiling using your abdominal muscles and pause at the peak. Ease back down slowly as you inhale."
+   },
+      {
+    "name": "Reverse crunch",
+    "photo" : "reverse_crunch.png",
+    "others_muscles_worked": [],
+    "description": "Lie on your back on the floor. Lift your feet off the floor and lift your hips off the ground, using your abs."
+   },
+
+   {
+    "name": "Side bend",
+    "photo" : "side_bend.png",
+    "others_muscles_worked": [],
+    "description": "Stand with feet shoulder-width apart, holding a medium-to-heavy dumbbell in your right hand. Engage your core and bend at your waist to the right toward the floor. Let the weight guide you down slowly. Pulling from your core, bring your body back to start position."
+   },
+
+   {
+    "name": "Ab Roller ",
+    "photo" : "ab_roller.png",
+    "others_muscles_worked": [],
+    "description": "Place the ab wheel on the floor in front of your feet. Brace the core tight with arms fully extended and slowly roll the wheel forward until your body is parallel to the ground. Squeeze your core tight and roll yourself back to the starting position. "
+   },
+
+   {
+    "name": "Front lever",
+    "photo" : "front_lever.png",
+    "others_muscles_worked": [],
+    "description": "Place your hands on the barbell and lift your (straighted) core until is it parallel of the ground. Keep this position long as you can."
+   },
+
+   {
+    "name": "Plank",
+    "photo" : "plank.png",
+    "others_muscles_worked": [],
+    "description": "Bend your elbows and rest your weight on your forearms instead of your hands. Your body should form a straight line from your shoulders to your ankles. Brace your core as if you were about to be punched in the stomach. "
+   },
+
+    {
+    "name": "Side plank",
+    "photo" : "side_plank.png",
+    "others_muscles_worked": [],
+    "description": "Lie on your left side with your knees straight. Prop your body up on your left elbow and forearm, feet stacked. Raise your hips until your body forms a straight line from your ankles to your shoulders. Brace your abs and breathe deeply for the duration of the exercise."
+   }
+  ]
+ },
+
+ "barbell" : {
+
+  "back": [
+
+   {
+    "name": "Barbell Row back",
+    "photo" : "rowing.png",
+    "others_muscles_worked": ["biceps", "shoulder", "forearm", "traps"],
+    "description": "Load a barbell in a rack with a medium-heavy weight. Grasp the bar with an overhand grip, hands about shoulder-width apart. Bend your knees slightly and push your butt back, shifting your torso as you do so. The bar should be resting at the bottom of your thighs. Your hamstrings should be engaged, and your core should be tight. Make sure that your shoulders are on a higher plane than your butt, and that your shins are perpendicular to the ground. This is the start. Now squeeze your shoulder blades. Then bend at the shoulders and elbows, pulling the bar upwards and back, trying to touch it to your torso, just a few inches above your belly button. Your elbows should maintain a 45-degree angle from the body and you should be pulling mostly with your upper arm. Pause when the bar touches your torso (or very nearly does), then slowly return to the start."
+   },
+
+   {
+    "name": "Pull over",
+    "photo" : "pull_over.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Holding a medium-to-heavy barbell, lay with your back flat on a bench or stability ball. With your feet planted on the ground and your core engaged, extend your arms to the sky, cupping the dumbbell with both hands above your chest. Keeping your low back pressed into the bench or stability ball, slowly lower your arms overhead until your biceps reach your ears. Slowly bring your arms back to above your chest and repeat. "
+   },
+
+   {
+    "name": "T-bar row",
+    "photo" : "t-bar_row.png",
+    "others_muscles_worked": ["biceps", "shoulder", "forearm", "traps"],
+    "description": "Load a T bar in a rack with a medium-heavy weight. Grasp the bar with an overhand grip, hands about shoulder-width apart. Bend your knees slightly and push your butt back, shifting your torso as you do so. The bar should be resting at the bottom of your thighs. Your hamstrings should be engaged, and your core should be tight. Make sure that your shoulders are on a higher plane than your butt, and that your shins are perpendicular to the ground. This is the start. Now squeeze your shoulder blades. Then bend at the shoulders and elbows, pulling the bar upwards and back, trying to touch it to your torso, just a few inches above your belly button. Your elbows should maintain a 45-degree angle from the body and you should be pulling mostly with your upper arm. Pause when the bar touches your torso (or very nearly does), then slowly return to the start."
+   }
+  ],
+
+  "lower_back": [
+   {
+    "name": "Deadlift",
+    "photo" : "deadlift.png",
+    "others_muscles_worked": ["leg", "back", "traps"],
+    "description": "Stand with your mid-foot under the barbell Bend over and grab the bar with a shoulder-width grip Bend your knees until your shins touch the bar Lift your chest up and straighten your lower back Take a big breath, hold it, and stand up with the weight   "
+   },
+
+   {
+    "name": "Good morning",
+    "photo" : "goodmorning.png",
+    "others_muscles_worked": ["leg"],
+    "description": "For the bodyweight version of the good morning stand with your feet shoulder-width apart and your hands placed behind your head. Stand upright, brace your core and pull your shoulders back."
+   }
+  ],
+
+  "chest": [
+   {
+    "name": "Flat bench press",
+    "photo" : "bench_press.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Lie on the bench with your eyes under the bar Grab the bar with a medium grip-width (thumbs around the bar!) Unrack the bar by straightening your arms Lower the bar to your mid-chest Press the bar back up until your arms are straight "
+   },
+
+      {
+    "name": "Incline bench press",
+    "photo" : "incline_bench_press.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Lie on the bench with your eyes under the bar Grab the bar with a medium grip-width (thumbs around the bar!) Unrack the bar by straightening your arms Lower the bar to your up-chest Press the bar back up until your arms are straight."
+   },
+
+      {
+    "name": "Decline bench press",
+    "photo" : "decline_bench_press.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Lie on the bench with your eyes under the bar Grab the bar with a medium grip-width (thumbs around the bar!) Unrack the bar by straightening your arms Lower the bar to your low-chest Press the bar back up until your arms are straight."
+   }
+  ],
+
+  "shoulder": [
+   {
+    "name": "Shoulders press",
+    "photo" : "shoulders_press.png",
+    "others_muscles_worked": ["triceps", "chest", "traps"],
+    "description": "Stand with the bar on your front shoulders, and your hands next to your shoulders Press the bar over your head, until it’s balanced over your shoulders and mid-foot Lock your elbows at the top, and shrug your shoulders to the ceiling."
+   },
+
+   {
+    "name": "Upright rowing",
+    "photo" : "upright_row.png",
+    "others_muscles_worked": ["biceps", "forearm", "traps"],
+    "description": "Grasp a barbell and allow it to hang in front of you at the length of your arms. Your palms should be facing your body. Standing up straight, adjust your grip so that your hands are about in line with the thighs. Shoulder-width apart (no closer) is recommended for wrist and shoulder safety  Breathe in and brace the abdominals, keep the back straight, chest up, and eyes focused forward. Lift the barbell straight up toward the chin, leading with the elbows and keeping the bar close to the body. Breathe out during the effort. Your arms should go no higher than parallel with the shoulders. Slightly less is OK. Pause at the top of the lift. Return the barbell back to the starting position, breathing in as you lower it. "
+   },
+
+   {
+    "name": "Barbell front raise",
+    "photo" : "front_raise.png",
+    "others_muscles_worked": [],
+    "description": "Stand tall with your feet hip-width apart. Hold a barbell in each hand in front of your thighs. Your palms should face toward you. Raise your arms up in front of you. Pause when the barbell reach shoulder height. Then slowly return the weights to the starting position."
+   }
+  ],
+
+  "leg": [
+   {
+    "name": "Barbell squat",
+    "photo" : "squat.png",
+    "others_muscles_worked": ["lower_back", "calf"],
+    "description": "With the weight on your shoulders, step back from the supports. Your feet should be slightly wider than hip-width apart.Your toes should be slightly pointing outward. Flex your stomach, squeeze your glutes, inhale deeply into your stomach. Move your butt back, squat down slowly. Continue to drop until the tops of your legs are parallel or lower (the crease of your hip is below your waist). Explode back up to the starting position."
+   },
+
+   {
+    "name": "Front Squat",
+    "photo" : "front_squat.png",
+    "others_muscles_worked": ["lower_back", "calf"],
+    "description": "With the weight on your front of shoulders, step back from the supports. Your feet should be slightly wider than hip-width apart.Your toes should be slightly pointing outward. Flex your stomach, squeeze your glutes, inhale deeply into your stomach. Move your butt back, squat down slowly. Continue to drop until the tops of your legs are parallel or lower (the crease of your hip is below your waist). Explode back up to the starting position."
+   },
+   {
+    "name": "Barbell Lunge",
+    "photo" : "lunge.png",
+    "others_muscles_worked": ["lower_back", "calf"],
+    "description": "With the weight on your shoulders, stand straight on a firm surface. Your feet should be kept a few inches apart. Your upper body should be upright at starting position, and remain upright throughout. Pick your right foot up and step forwards slowly. Lower your hips, and bend your right knee until it is positioned at a 90 degree angle. Your front knee must not push out over your ankle, and your back knee should not be touching the floor. Ensure that your movements are slow, so that your back knee does not touch the floor. Put your weight in your heels, and push yourself up to starting position. Repeat with left leg up front."
+   }
+  ],
+
+  "calf": [
+   {
+    "name": "Barbell calf extentions",
+    "photo" : "calf_extention.png",
+    "others_muscles_worked": [],
+    "description": "With the weight on your shoulders, step forward onto a calf block or a similar raised platform, setting the balls of your feet on the block and leaving the rest of your feet hanging over the edge. Begin by flexing your feet to lift your heels as high as you can. Descend slowly and allow your heels to drop a bit below the level of the block to complete one repetition. Keep your knees and back as straight as you can and perform the exercise with smooth, fluid movements."
+   }
+  ],
+
+  "biceps": [
+   {
+    "name": "Barbell biceps Curl",
+    "photo" : "curl.png",
+    "others_muscles_worked": ["forearm"],
+    "description": "Stand up straight holding a barbell using a shoulder-width supinated grip (palms facing upward). Your arms should be almost fully extended, and the barbell should be resting against your thighs. Keeping your body still, exhale as you curl the barbell up towards your shoulders until your elbows are fully flexed. Once your elbows are fully flexed, allow your elbows to move forward a little (shoulder flexion), just until your forearms are vertical. Hold for a count of two and squeeze your biceps. Inhale as you slowly lower the barbell to the starting position."
+   },
+
+   {
+    "name": "Barbell preacher curl",
+    "photo" : "preacher_curl.png",
+    "others_muscles_worked": ["forearm"],
+    "description": "Hold the E-Z curl bar at the close grip (inner handle). Your palms should be facing forward and slightly tilted inwards due to the shape of the bar. Position your upper arms and chest against the preacher bench pad while holding the E-Z Curl Bar at shoulder length. As you exhale, use the biceps to curl the weight up until your biceps are fully contracted and the bar is at shoulder height. Squeeze the biceps hard and hold this position for a second. As you breathe in, slowly lower the bar until your upper arm is extended and the biceps is fully stretched."
+   }
+  ],
+
+  "triceps": [
+      {
+    "name": "Skull Crushers",
+    "photo" : "skull_crushers.png",
+    "others_muscles_worked": [],
+    "description": "One you grip the barbell, Keep your upper arms perpendicular to the floor, not necessarily perpendicular to your body and ONLY extend your elbows until short or full extension."
+   },
+
+   {
+    "name": "Close-grip flat bench press",
+    "photo" : "close_bench_press.png",
+    "others_muscles_worked": ["chest", "shoulder"],
+    "description": "Lie on the bench with your eyes under the bar Grab the bar with a close grip-width Unrack the bar by straightening your arms Lower the bar to your mid-chest Press the bar back up until your arms are straight (by keeping your elbows close to your core "
+   }
+  ],
+
+  "forearm": [
+   {
+    "name": "Reverse curl",
+    "photo" : "reverse_curl.png",
+    "others_muscles_worked": ["biceps"],
+    "description": "Stand up straight holding a barbell using a shoulder-width pronated grip (palms facing downward). Your arms should be almost fully extended, and the barbell should be resting against your thighs. Keeping your body still, exhale as you curl the barbell up towards your shoulders until your elbows are fully flexed. Once your elbows are fully flexed, allow your elbows to move forward a little (shoulder flexion), just until your forearms are vertical. Hold for a count of two and squeeze your biceps. Inhale as you slowly lower the barbell to the starting position."
+   },
+
+   {
+    "name": "Wrist curl",
+    "photo" : "wrist_curl.png",
+    "others_muscles_worked": [],
+    "description": "Begin by gripping the barbell in a supinated grip (palms facing upwards) with arms shoulder width apart. As you exhale your breath, curl your wrist upwards as far as possible. ) Focus on total forearm and wrist contraction throughout. No other part of the arm should be involved. ) As you breath in, slowly release your wrists back to the starting position. Aim to control the movement especially through this part of the movement (Eccentric Part) as any uncontrolled movements could lead to wrist sprain or other injuries."
+   },
+
+   {
+    "name": "Reverse wrist curl",
+    "photo" : "reverse_wrist_curl.png",
+    "others_muscles_worked": [],
+    "description": "Begin by gripping the barbell in a pronated grip (palms facing downwards) with arms shoulder width apart. As you exhale your breath, curl your wrist upwards as far as possible. ) Focus on total forearm and wrist contraction throughout. No other part of the arm should be involved. ) As you breath in, slowly release your wrists back to the starting position. Aim to control the movement especially through this part of the movement (Eccentric Part) as any uncontrolled movements could lead to wrist sprain or other injuries."
+   }
+  ],
+
+  "traps": [
+   {
+    "name": "Shrugs",
+    "photo" : "shrugs.png",
+    "others_muscles_worked": [],
+    "description": "Hold a barbell with a pronated grip. The arms and shoulders should be somewhat relaxed but still have sufficient muscular tension to support the dumbbells comfortably and to keep the shoulders from rounding. Inhale and hold your breath as you raise the shoulders as high as possible. Raise them as close to the bottom of the ears as you can get. As you raise the shoulders, the arms should remain straight so that the weight is raised in synchronization with the amount of shoulder raising. Keep your shoulders back, chest out and eyes focused straight ahead as you execute the shrugging action. After reaching maximum height, tighten and hold the up position for one to two seconds. Relax the muscles involved and exhale as you let the shoulders down to the initial position under control."
+   }
+  ]
+ },
+
+ "dumbbell" : {
+
+   "back": [
+
+   {
+    "name": "Row back with Dumbbell",
+    "photo" : "rowing.png",
+    "others_muscles_worked": ["biceps", "shoulder", "forearm", "traps"],
+    "description": "Use a flat to support your core and load the dumbbell on the floor with a medium-heavy weight. Grasp the dumbell with an overhand grip, hands about shoulder-width apart. Bend your knees slightly and push your butt back, shifting your torso as you do so. The bar should be resting at the bottom of your thighs. Your hamstrings should be engaged, and your core should be tight. Make sure that your shoulders are on a higher plane than your butt, and that your shins are perpendicular to the ground. This is the start. Now squeeze your shoulder blades. Then bend at the shoulders and elbows, pulling the bar upwards and back, trying to touch it to your torso, just a few inches above your belly button. Your elbows should maintain a 45-degree angle from the body and you should be pulling mostly with your upper arm. Pause when the bar touches your torso (or very nearly does), then slowly return to the start. Repeat it again with your other hand"
+   },
+
+   {
+    "name": "Pull over with Dumbbell",
+    "photo" : "pull_over.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Holding a medium-to-heavy dumbbell, lay with your back flat on a bench or stability ball. With your feet planted on the ground and your core engaged, extend your arms to the sky, cupping the dumbbell with both hands above your chest. Keeping your low back pressed into the bench or stability ball, slowly lower your arms overhead until your biceps reach your ears. Slowly bring your arms back to above your chest and repeat."
+   }
+  ],
+
+  "lower_back": [
+   {
+    "name": "Deadlift with Dumbbell",
+    "photo" : "deadlift.png",
+    "others_muscles_worked": ["leg", "back", "traps"],
+    "description": "Stand with your mid-foot under the dumbbells Bend over and grab the dumbbells with a shoulder-width grip Bend your knees Lift your chest up and straighten your lower back Take a big breath, hold it, and stand up with the weight   "
+   }
+  ],
+
+  "chest": [
+   {
+    "name": "Flat dumbbell press",
+    "photo" : "bench_press.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Handle your dumbbells and Lie on the bench  Lower the dumbbells to your mid-chest Press the dumbells up until your arms are straight "
+   },
+
+      {
+    "name": "Incline dumbbell press",
+    "photo" : "incline_bench_press.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Handle your dumbbells and Lie on the bench  Lower the dumbbells to your up-chest Press the dumbells up until your arms are straight "
+   },
+
+      {
+    "name": "Decline dumbbell press",
+    "photo" : "decline_bench_press.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Handle your dumbbells and Lie on the bench  Lower the dumbbells to your low-chest Press the dumbells up until your arms are straight "
+   },
+
+   {
+    "name": "Incline dumbbell flyes",
+    "photo" : "incline_dumbbell_flyes.png",
+    "others_muscles_worked": ["shoulder"],
+    "description": "Grasp two dumbbells. Lie supine on incline bench. Support dumbbells above chest with arms fixed in slightly bent position. Internally rotate shoulders so elbows point out to sides. Lower dumbbells to sides until chest muscles are stretched with elbows fixed in slightly bent position. Bring dumbbells together in wide hugging motion until dumbbells are nearly together. Repeat. "
+   },
+
+   {
+    "name": "Decline dumbbell flyes",
+    "photo" : "decline_dumbbell_flyes.png",
+    "others_muscles_worked": ["shoulder"],
+    "description": "Grasp two dumbbells. Lie supine on a decline bench. Support dumbbells above chest with arms fixed in slightly bent position. Internally rotate shoulders so elbows point out to sides. Lower dumbbells to sides until chest muscles are stretched with elbows fixed in slightly bent position. Bring dumbbells together in wide hugging motion until dumbbells are nearly together. Repeat. "
+   },
+
+   {
+    "name": "Flat dumbbell flyes",
+    "photo" : "dumbbell_flyes.png",
+    "others_muscles_worked": ["shoulder"],
+    "description": "Grasp two dumbbells. Lie supine on bench. Support dumbbells above chest with arms fixed in slightly bent position. Internally rotate shoulders so elbows point out to sides. Lower dumbbells to sides until chest muscles are stretched with elbows fixed in slightly bent position. Bring dumbbells together in wide hugging motion until dumbbells are nearly together. Repeat. "
+   }
+  ],
+
+  "shoulder": [
+   {
+    "name": "Shoulders press with Dumbbell",
+    "photo" : "shoulders_press.png",
+    "others_muscles_worked": ["triceps", "chest", "traps"],
+    "description": "Stand with the dumbbells on your front shoulders, and your hands next to your shoulders Press the dumbbells over your head, until it’s balanced over your shoulders and mid-foot Lock your elbows at the top, and shrug your shoulders to the ceiling."
+   },
+
+   {
+    "name": "Upright row with Dumbbell",
+    "photo" : "upright_row.png",
+    "others_muscles_worked": ["biceps", "forearm", "traps"],
+    "description": "Grasp a dumbbells and allow it to hang in front of you at the length of your arms. Your palms should be facing your body. Standing up straight. Shoulder-width apart (no closer) is recommended for wrist and shoulder safety  Breathe in and brace the abdominals, keep the back straight, chest up, and eyes focused forward. Lift the dumbbells straight up toward the chin, leading with the elbows and keeping the bar close to the body. Breathe out during the effort. Your arms should go no higher than parallel with the shoulders. Slightly less is OK. Pause at the top of the lift. Return the dumbbells back to the starting position, breathing in as you lower it."
+   },
+
+   {
+    "name": "Front raise",
+    "photo" : "front_raise.png",
+    "others_muscles_worked": [],
+    "description": "Stand tall with your feet hip-width apart. Hold the dumbbells in each hand in front of your thighs. Your palms should face toward you. Raise your arms up in front of you. Pause when the dumbbells reach shoulder height. Then slowly return the weights to the starting position."
+   },
+
+   {
+    "name": "Side raise",
+    "photo" : "side_raise.png",
+    "others_muscles_worked": [],
+    "description": "Stand tall with your feet hip-width apart. Hold the dumbbells in each hand in the side of your thighs. Your palms should face toward you. Raise your arms up in the side of you. Pause when the dumbbells reach shoulder height. Then slowly return the weights to the starting position."
+   },
+
+   {
+    "name": "Bent over raise",
+    "photo" : "bent_over_raise.png",
+    "others_muscles_worked": [],
+    "description": "Lie on an inclined flat with core front of it. Hold the dumbbells in each hand in front of your thighs. Raise your arms up behind of you. Pause when the dumbbells reach shoulder height. Then slowly return the weights to the starting position."
+   }
+  ],
+
+  "leg": [
+   {
+    "name": "Squat with Dumbbell",
+    "photo" : "squat.png",
+    "others_muscles_worked": ["lower_back", "calf"],
+    "description": "Once the dumbbell is lie on the floor, handle it by kneeling. Your feet should be slightly wider than hip-width apart. Your toes should be slightly pointing outward. Flex your stomach, squeeze your glutes, inhale deeply into your stomach. Move your butt back, squat down slowly. Continue to drop until the tops of your legs are parallel or lower (the crease of your hip is below your waist). Explode back up to the starting position."
+   },
+
+   {
+    "name": "Lunge with Dumbbell",
+    "photo" : "lunge.png",
+    "others_muscles_worked": ["lower_back", "calf"],
+    "description": "With the dumbbells on your hand, stand straight on a firm surface. Your feet should be kept a few inches apart. Your upper body should be upright at starting position, and remain upright throughout. Pick your right foot up and step forwards slowly. Lower your hips, and bend your right knee until it is positioned at a 90 degree angle. Your front knee must not push out over your ankle, and your back knee should not be touching the floor. Ensure that your movements are slow, so that your back knee does not touch the floor. Put your weight in your heels, and push yourself up to starting position. Repeat with left leg up front."
+   }
+  ],
+
+  "calf": [
+   {
+    "name": "calf extentions with Dumbbell",
+    "photo" : "calf_extention.png",
+    "others_muscles_worked": [],
+    "description": "With the dumbbells on your hand, step forward onto a calf block or a similar raised platform, setting the balls of your feet on the block and leaving the rest of your feet hanging over the edge. Begin by flexing your feet to lift your heels as high as you can. Descend slowly and allow your heels to drop a bit below the level of the block to complete one repetition. Keep your knees and back as straight as you can and perform the exercise with smooth, fluid movements."
+   }
+  ],
+
+  "biceps": [
+   {
+    "name": "Dumbbell biceps Curl",
+    "photo" : "curl.png",
+    "others_muscles_worked": ["forearm"],
+    "description": "Stand up straight holding the dumbbells using a shoulder-width supinated grip (palms facing upward). Your arms should be almost fully extended, and the dumbbells should be resting against your thighs. Keeping your body still, exhale as you curl the dumbbells up towards your shoulders until your elbows are fully flexed. Once your elbows are fully flexed, allow your elbows to move forward a little (shoulder flexion), just until your forearms are vertical. Hold for a count of two and squeeze your biceps. Inhale as you slowly lower the dumbbells to the starting position."
+   },
+
+   {
+    "name": "Inclined curl",
+    "photo" : "inclined_curl.png",
+    "others_muscles_worked": ["forearm"],
+    "description": "Lie on the inclined and holding the dumbbells using a shoulder-width supinated grip (palms facing upward). Your arms should be almost fully extended. Keeping your body still, exhale as you curl the dumbbells up towards your shoulders until your elbows are fully flexed. Once your elbows are fully flexed, allow your elbows to move forward a little (shoulder flexion), just until your forearms are vertical. Hold for a count of two and squeeze your biceps. Inhale as you slowly lower the dumbbells to the starting position."
+   },
+
+   {
+    "name": "Hammer curl",
+    "photo" : "hammer_curl.png",
+    "others_muscles_worked": ["forearm"],
+    "description": "Stand up straight holding the dumbbells using a shoulder-width neutrale grip (palms facing upward). Your arms should be almost fully extended, and the dumbbells should be resting against your thighs. Keeping your body still, exhale as you curl the dumbbells up towards your shoulders until your elbows are fully flexed. Once your elbows are fully flexed, allow your elbows to move forward a little (shoulder flexion), just until your forearms are vertical. Hold for a count of two and squeeze your biceps. Inhale as you slowly lower the dumbbells to the starting position."
+   },
+
+
+   {
+    "name": "Concentration curl",
+    "photo" : "concentration_curl.png",
+    "others_muscles_worked": ["forearm"],
+    "description": "Sit on the flat, elbow on your legs, holding the dumbbells using a shoulder-width supinated grip (palms facing upward). Your arms should be almost fully extended. Keeping your body still, exhale as you curl the dumbbells up towards your shoulders until your elbows are fully flexed. Once your elbows are fully flexed, allow your elbows to move forward a little (shoulder flexion), just until your forearms are vertical. Hold for a count of two and squeeze your biceps. Inhale as you slowly lower the dumbbells to the starting position."
+   }
+  ],
+
+  "triceps": [
+
+   {
+    "name": "Skull Crushers with Dumbbell",
+    "photo" : "skull_crushers.png",
+    "others_muscles_worked": [],
+    "description": "One you grip the dumbbells, Keep your upper arms perpendicular to the floor, not necessarily perpendicular to your body and ONLY extend your elbows until short or full extension."
+   },
+
+   {
+    "name": "Kick back",
+    "photo" : "kick_back.png",
+    "others_muscles_worked": [],
+    "description": "With a dumbbell in your right hand, kneel over a bench with your left knee, and support your body with your left arm. Position your torso and right upper arm parallel to the floor, with your right elbow bent at a 90-degree angle. The dumbbell should be hanging straight down below your elbow.Keeping your right upper arm stationary, exhale as you extend your right arm backward until it is straight. Hold for a count of two. Inhale as you slowly lower the dumbbell back to the starting position. Repeat for the prescribed number of repetitions. Repeat the repetitions with your left arm. "
+   },
+
+   {
+    "name": "Overhead triceps extension",
+    "photo" : "overhead_triceps_pushdown.png",
+    "others_muscles_worked": [],
+    "description": "Holding a dumbbell, sit on a flat bench or chair and rest the dumbbell on its side on one knee. Grasp the base of the bar of the dumbbell with both hands, one hand over the other. Kick the dumbbell up with your knee and rest the other end of the dumbbell on your shoulder. Adjust your grip so that your hands make a heart shape under the plate. Lift the dumbbell around your shoulder and hold it behind your back, with your upper arms vertical and elbows flexed. Keeping your elbows close to your head and your upper arms vertical, exhale as you raise the dumbbell by extending your elbows. Inhale as you lower the dumbbell to the starting position by flexing your elbows."
+   }
+  ],
+
+  "forearm": [
+   {
+    "name": "Reverse curl with Dumbbell",
+    "photo" : "reverse_curl.png",
+    "others_muscles_worked": ["biceps"],
+    "description": "Stand up straight holding the dumbbells using a shoulder-width pronated grip (palms facing downward). Your arms should be almost fully extended, and the dumbbells should be resting against your thighs. Keeping your body still, exhale as you curl the dumbbells up towards your shoulders until your elbows are fully flexed. Once your elbows are fully flexed, allow your elbows to move forward a little (shoulder flexion), just until your forearms are vertical. Hold for a count of two and squeeze your biceps. Inhale as you slowly lower the dumbbells to the starting position."
+   }
+  ],
+
+  "traps": [
+   {
+    "name": "Shrugs with Dumbbell",
+    "photo" : "shrugs.png",
+    "others_muscles_worked": [],
+    "description": "Hold the dumbbells with a neutral grip. The arms and shoulders should be somewhat relaxed but still have sufficient muscular tension to support the dumbbells comfortably and to keep the shoulders from rounding. Inhale and hold your breath as you raise the shoulders as high as possible. Raise them as close to the bottom of the ears as you can get. As you raise the shoulders, the arms should remain straight so that the weight is raised in synchronization with the amount of shoulder raising. Keep your shoulders back, chest out and eyes focused straight ahead as you execute the shrugging action. After reaching maximum height, tighten and hold the up position for one to two seconds. Relax the muscles involved and exhale as you let the shoulders down to the initial position under control."
+   }
+  ],
+
+  "abs": [
+
+   {
+    "name": "Side bend with Dumbbell",
+    "photo" : "side_bend.png",
+    "others_muscles_worked": [],
+    "description": "Hold a dumbbell and stand with feet shoulder-width apart, holding a medium-to-heavy dumbbell in your right hand. Engage your core and bend at your waist to the right toward the floor. Let the weight guide you down slowly. Pulling from your core, bring your body back to start position. Repeat with the other hand."
+   }
+  ]
+
+ },
+
+ "machine" : {
+
+   "back": [
+   {
+    "name": "Lat Pull Down",
+    "photo" : "pull_up.png",
+    "others_muscles_worked": ["biceps", "shoulder", "forearm", "traps"],
+    "description": "Sit at a lat pulldown station and grab the bar with an overhand grip that's just beyond shoulder width. Your arms should be completely straight and your torso upright. Pull your shoulder blades down and back, and bring the bar to your chest. Pause, then slowly return to the starting position."
+   },
+
+   {
+    "name": "Rowing machine",
+    "photo" : "rowing.png",
+    "others_muscles_worked": ["biceps", "shoulder", "forearm", "traps"],
+    "description": "Place your feet on the support and grip the handle with a neutral grip. Then bend at the shoulders and elbows, pulling the bar upwards and back, trying to touch it to your torso, just a few inches above your belly button. come back slowly."
+   },
+
+   {
+    "name": "Pull over with cable",
+    "photo" : "pull_over.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Holding the grip over your head. With your feet planted on the ground and your core engaged, extend your arms to the sky, cupping the handle with both hands above your chest.slowly lower your arms overhead until your biceps reach your ears. Slowly bring your arms back to above your chest and repeat."
+   },
+
+   {
+    "name": "T-bar row machine",
+    "photo" : "t-bar_row.png",
+    "others_muscles_worked": ["biceps", "shoulder", "forearm", "traps"],
+    "description": "Load a T bar in the machine with a medium-heavy weight and put your body against the support. Grasp the bar with an overhand grip, hands about shoulder-width apart. Bend your knees slightly and push your butt back, shifting your torso as you do so. The bar should be resting at the bottom of your thighs. Your hamstrings should be engaged, and your core should be tight. Make sure that your shoulders are on a higher plane than your butt, and that your shins are perpendicular to the ground. This is the start. Now squeeze your shoulder blades. Then bend at the shoulders and elbows, pulling the bar upwards and back, trying to touch it to your torso, just a few inches above your belly button. Your elbows should maintain a 45-degree angle from the body and you should be pulling mostly with your upper arm. Pause when the bar touches your torso (or very nearly does), then slowly return to the start."
+   }
+  ],
+
+  "chest": [
+   {
+    "name": "Chest press",
+    "photo" : "chest_press.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Adjust the seat so that the handles are approximately chest height. Sit in the chest press machine with your back pressed firmly against the back rest. Grasp the handles with a pronated (overhand) grip. Plant your feet firmly on the ground. Exhale as you press the handles out until your arms are fully extended. Inhale as you reverse the motion until you feel a mild stretch in your chest."
+   },
+
+   {
+    "name": "Butterfly",
+    "photo" : "butterfly.png",
+    "others_muscles_worked": ["shoulder"],
+    "description": "Sit yourself on the support and grip the handles  put the handles to your mid-chest Press the handles up until your arms are straight "
+   },
+
+   {
+    "name": "Dips machine",
+    "photo" : "dips.png",
+    "others_muscles_worked": ["triceps", "shoulder"],
+    "description": "Sit on the support and placing your hands on each bar. Start with your arms flexed, then lean slightly forward from the hips to drive weight into the chest as you bend the elbows. When your upper arms are about parallel to the floor and you feel a slight stretch in your chest, extend the elbows to return to start."
+   }
+  ],
+
+  "shoulder": [
+   {
+    "name": "Shoulders press machine",
+    "photo" : "shoulders_press.png",
+    "others_muscles_worked": ["triceps", "chest", "traps"],
+    "description": "Sit on the support and grip the handles Press the handles over your head, until it’s balanced over your shoulders and mid-foot Lock your elbows at the top, and shrug your shoulders to the ceiling."
+   },
+
+   {
+    "name": "Upright row with cable",
+    "photo" : "upright_row.png",
+    "others_muscles_worked": ["biceps", "forearm", "traps"],
+    "description": "Grasp the handle and allow it to hang in front of you at the length of your arms. Your palms should be facing your body. Standing up straight, adjust your grip so that your hands are about in line with the thighs. Shoulder-width apart (no closer) is recommended for wrist and shoulder safety  Breathe in and brace the abdominals, keep the back straight, chest up, and eyes focused forward. Lift the handle straight up toward the chin, leading with the elbows and keeping the bar close to the body. Breathe out during the effort. Your arms should go no higher than parallel with the shoulders. Slightly less is OK. Pause at the top of the lift. Return the handle back to the starting position, breathing in as you lower it."
+   },
+
+   {
+    "name": "Face pull with cable",
+    "photo" : "face_pull.png",
+    "others_muscles_worked": ["biceps", "forearm", "traps"],
+    "description": "Grasp the handle and allow it to hang in front of your face. Your palms should be facing your body. Standing up straight, adjust your grip so that your hands are about in line with the thighs. Lift the handle straight up toward the face, leading with the elbows perpendicular of the floor. Come back slowly."
+   },
+
+   {
+    "name": "Side raise with cable",
+    "photo" : "side_raise.png",
+    "others_muscles_worked": [],
+    "description": "Stand tall with your feet hip-width apart. Hold the handle in the hand in the side of your thighs. Your palms should face toward you. Raise your arms up in the side of you. Pause when the handle reach shoulder height. Then slowly return the weights to the starting position."
+   }
+  ],
+
+  "leg": [
+   {
+    "name": "Squat machine",
+    "photo" : "squat.png",
+    "others_muscles_worked": ["lower_back", "calf"],
+    "description": "With the weight on your shoulders, step back from the supports. Your feet should be slightly wider than hip-width apart.Your toes should be slightly pointing outward. Flex your stomach, squeeze your glutes, inhale deeply into your stomach. Move your butt back, squat down slowly. Continue to drop until the tops of your legs are parallel or lower (the crease of your hip is below your waist). Explode back up to the starting position."
+   },
+
+   {
+    "name": "Leg Press",
+    "photo" : "leg_press.png",
+    "others_muscles_worked": ["lower_back", "calf"],
+    "description": "Adjust the seat of the machine so that you can sit comfortably with your hips beneath your knees and your knees in line with your feet. Remove the safeties and lower your knees toward your chest until they’re bent 90 degrees and then press back up. Be careful not to go too low or you risk your lower back coming off the seat."
+   },
+
+   {
+    "name": "Leg extension",
+    "photo" : "leg_extention.png",
+    "others_muscles_worked": ["lower_back"],
+    "description": "Place your hands on the hand bars. Lift the weight while exhaling until your legs are almost straight. Do not lock your knees. Keep your back against the backrest and do not arch your back. Exhale and lower the weight back to starting position."
+   },
+
+   {
+    "name": "Leg curl",
+    "photo" : "leg_curl.png",
+    "others_muscles_worked": ["lower_back"],
+    "description": "Adjust the roller pad so that it rests comfortably a few inches under your calves, just above the heels. Check to make sure the pads aren't too high up on your calves as this can place pressure on your Achilles tendon and reduce your range of motion. Stretch your legs out fully. On an inhale, lightly grasp the support handles on each side of the machine. Lift your feet smoothly as you exhale, keeping your hips firmly on the bench. Inhale as you flex your knees and pull your ankles as close to your buttocks as you can. Hold this position for a beat, allowing yourself to make sure you are focused as you prepare to lower your legs. Inhale fully as you return your feet to starting position in a smooth, slow, controlled movement."
+   }
+  ],
+
+  "calf": [
+   {
+    "name": "calf extension sitted",
+    "photo" : "calf_extention.png",
+    "others_muscles_worked": [],
+    "description": "One you are sit and with the support on your knee. Begin by flexing your feet to lift your heels as high as you can. Descend slowly and allow your heels to drop a bit below the level of the block to complete one repetition."
+   }
+  ],
+
+  "biceps": [
+   {
+    "name": "Cable biceps curl",
+    "photo" : "curl.png",
+    "others_muscles_worked": ["forearm"],
+    "description": "Stand up straight holding the handle using a shoulder-width supinated grip (palms facing upward). Your arms should be almost fully extended, and the handle should be resting against your thighs. Keeping your body still, exhale as you curl the handle up towards your shoulders until your elbows are fully flexed. Once your elbows are fully flexed, allow your elbows to move forward a little (shoulder flexion), just until your forearms are vertical. Hold for a count of two and squeeze your biceps. Inhale as you slowly lower the handle to the starting position."
+   },
+
+   {
+    "name": "Preacher curl machine",
+    "photo" : "preacher_curl.png",
+    "others_muscles_worked": ["forearm"],
+    "description": "Hold the handle at the close grip (inner handle). Your palms should be facing forward and slightly tilted inwards due to the shape of the bar. Position your upper arms and chest against the preacher bench pad while holding the handle at shoulder length. As you exhale, use the biceps to curl the weight up until your biceps are fully contracted and the bar is at shoulder height. Squeeze the biceps hard and hold this position for a second. As you breathe in, slowly lower the bar until your upper arm is extended and the biceps is fully stretched."
+   },
+
+   {
+    "name": "Overhead cable curl",
+    "photo" : "overhead_cable_curl.png",
+    "others_muscles_worked": ["forearm"],
+    "description": "Fix up one cable station on either side of your shoulders, at a height slightly higher than your shoulders. Attach a stirrup type handle to each pulley. Select a weight that is comfortable to you, and make sure you attach the same weight on both sides of the machine. With your feet at a distance of shoulder’s width apart, stand between the two machines. Stretch your arms to their respective sides and gab the handles with an underhand grip of your hands. Keep your arms and shoulders in a straight line. Curl your arms towards your shoulders by flexing your biceps. Exhale as you do so. Curl until your forearms touch your biceps. Hold there for a count of one. Inhale and return to the start position."
+   }
+  ],
+
+  "triceps": [
+   {
+    "name": "Triceps pushdowns",
+    "photo" : "triceps_pushdown.png",
+    "others_muscles_worked": [],
+    "description": "Tuck your elbows in at your sides and position your feet slightly apart. Inhale. Push down until your elbows are fully extended but not yet in the straight, locked position. Keep your elbows close to your body and bend your knees slightly on the pushdown. Resist bending forward. Try to keep your back as straight as possible as you push down. As you exhale, return to the starting point using a controlled movement. Try not to crash the weights."
+   },
+
+   {
+    "name": "Overhead triceps extension with cable",
+    "photo" : "overhead_triceps_pushdown.png",
+    "others_muscles_worked": [],
+    "description": "Once you are stand up and grip the handle and Lift it around your shoulder and hold it behind your back, with your upper arms vertical and elbows flexed. Keeping your elbows close to your head and your upper arms vertical, exhale as you raise the handle by extending your elbows. Inhale as you lower the handle to the starting position by flexing your elbows."
+   },
+
+   {
+    "name": "Dips triceps machine",
+    "photo" : "dips_triceps.png",
+    "others_muscles_worked": ["chest", "shoulder"],
+    "description": "Sit on the support and placing your hands on each bar. Start with your arms flexed and elbow against the core, then lean slightly forward from the hips to drive weight into the chest as you bend the elbows. When your upper arms are about parallel to the floor and you feel a slight stretch in your chest, extend the elbows to return to start."
+   },
+
+   {
+    "name": "Kick back with cable",
+    "photo" : "kick_back.png",
+    "others_muscles_worked": [],
+    "description": "With the handle in your right hand, position your torso and right upper arm parallel to the floor, with your right elbow bent at a 90-degree angle. The handle should be hanging straight down below your elbow.Keeping your right upper arm stationary, exhale as you extend your right arm backward until it is straight. Hold for a count of two. Inhale as you slowly lower the handle back to the starting position. Repeat for the prescribed number of repetitions. Repeat the repetitions with your left arm. "
+   }
+  ],
+
+  "traps": [
+   {
+    "name": "Shrugs with cable",
+    "photo" : "shrugs.png",
+    "others_muscles_worked": [],
+    "description": "Hold the handle with a pronated grip. The arms and shoulders should be somewhat relaxed but still have sufficient muscular tension to support the handle comfortably and to keep the shoulders from rounding. Inhale and hold your breath as you raise the shoulders as high as possible. Raise them as close to the bottom of the ears as you can get. As you raise the shoulders, the arms should remain straight so that the weight is raised in synchronization with the amount of shoulder raising. Keep your shoulders back, chest out and eyes focused straight ahead as you execute the shrugging action. After reaching maximum height, tighten and hold the up position for one to two seconds. Relax the muscles involved and exhale as you let the shoulders down to the initial position under control."
+   }
+  ],
+
+  "abs": [
+   {
+    "name": "Crunch machine",
+    "photo" : "crunch.png",
+    "others_muscles_worked": [],
+    "description": "Sit in the ab machine with your back resting against the back support and your chest resting against the padded lever. Hook your feet under the foot pads. Grasp the handles for support. Keeping your hips fixed, exhale as you push the padded lever down with your chest by flexing your waist. Hold for a count of two. Inhale as you return the padded lever to the starting position in a controlled manner by extending your waist. Relax your waist before repeating from the begining."
+   }
+  ]
+  }
+ }

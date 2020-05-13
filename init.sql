@@ -1,0 +1,3 @@
+CREATE DATABASE musculib;
+
+GRANT ALL PRIVILEGES ON DATABASE musculib TO postgres;

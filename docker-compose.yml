@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: "musculib"
+      POSTGRES_USER: "postgres"
+    volumes:
+      - "/var/lib/postgresql/data"
+
+  web:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: >
+      sh -c "python manage.py makemigrations
+            python manage.py migrate
+            python manage.py init_db
+            python manage.py runserver 0.0.0.0:3000"
+    volumes:
+      - .:/musculib
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
