@@ -1,22 +1,23 @@
 import React, { Component } from "react";
 import { useState, useEffect } from 'react';
 
-class ExercisesList extends Component {
+
+class ExercisesByDeclination extends Component {
 
     constructor() {
         super()
         this.state = {
-            exercises: []
+            declination: {}
         }
 
         this.onclick.bind(this)
     }
 
     componentDidMount() {
-        fetch("/api_musculib/exercice/")
+        fetch("/api_musculib/declination/" + this.props.match.params.id + "/")
         .then(response => response.json())
         .then((data) => {
-            this.setState({ exercises: data})
+            this.setState({ declination: data});
         })
         .catch((err) => {
             alert("error");
@@ -29,15 +30,17 @@ class ExercisesList extends Component {
     }
 
     render() {
-
-        if (this.state.exercises.length == 0) {
+        if (this.state.declination.related_exercices == undefined) {
             return (
                 <div>Exercies loading...</div>
             )
         }
+
         return (
             <div>
-                {this.state.exercises.map((exercise) => (
+                <h2>Exercices that you can use with {this.state.declination.name}</h2>
+
+                {this.state.declination.related_exercices.map((exercise) => (
                     <table key={exercise.id}>
                         <tbody>
                             <tr>
@@ -48,7 +51,7 @@ class ExercisesList extends Component {
                                 <th>
                                     <img onClick={() => this.onclick(exercise.id)}
                                          style={{width:"25%"}}
-                                         src={exercise.display_image}
+                                         src={"http://0.0.0.0:3000/" + exercise.display_image}
                                     />
                                 </th>
                             </tr>
@@ -60,4 +63,7 @@ class ExercisesList extends Component {
     }
 }
 
-export default ExercisesList;
+export default ExercisesByDeclination;
+
+
+

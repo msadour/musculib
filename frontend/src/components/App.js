@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import Home from './pages/Home'
 import ExercisesList from './pages/exercises/ExercisesList'
 import ExerciseDetail from './pages/exercises/ExerciseDetail'
+import ExercisesByMuscle from './pages/exercises/ExercisesByMuscle'
+import ExercisesByDeclination from './pages/exercises/ExercisesByDeclination'
+
 
 export default class App extends Component {
     render() {
@@ -18,6 +21,9 @@ export default class App extends Component {
                             <Route exact path='/' component={Home} />
                             <Route exact path='/exercises' component={ExercisesList} />
                             <Route path="/exercises_detail/:id" component={ExerciseDetail}/>
+                            <Route path="/exercises/declination/:id" component={ExercisesByDeclination}/>
+                            <Route path="/exercises/muscle/:id" component={ExercisesByMuscle}/>
+
                         </Switch>
                     </div>
                 </Fragment>

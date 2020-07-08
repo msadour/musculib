@@ -13,7 +13,7 @@ class ExerciseDetail extends Component {
     }
 
     componentDidMount() {
-        fetch("/api_musculib/exercice/" + this.props.match.params.id)
+        fetch("/api_musculib/exercice/" + this.props.match.params.id + "/")
         .then(response => response.json())
         .then((data) => {
             this.setState({ exercise: data})
@@ -53,8 +53,6 @@ class ExerciseDetail extends Component {
                                 <br /> <br />
                             </th>
                         </tr>
-
-
 
                     </tbody>
                 </table>
