@@ -83,45 +83,45 @@ class Exercice(models.Model):
         """
 
         return 'media/' + self.declination.name + '/' + self.photo.name
-
-    def build(self, request):
-        """
-        Create an exercice via a request POST.
-        :param self:
-        :param request: request sended by the API views.
-        :return:
-        """
-
-        name_exercice = dict(request.data).get('name')[0]
-        main_muscle_worked = dict(request.data).get('main_muscle_worked')[0]
-        others_muscles_worked = dict(request.data).get('others_muscles_worked', [])
-        declination = dict(request.data).get('declination')[0]
-
-        self.name = name_exercice
-
-        self.main_muscle_worked = Muscle.objects.get(id=main_muscle_worked)
-        self.declination = Declination.objects.get(id=declination)
-        self.save()
-
-        for muscle in others_muscles_worked:
-            muscle_obj = Muscle.objects.get(name=muscle)
-            self.others_muscles_worked.add(muscle_obj)
-
-    def update(self, request):
-        for attr, value in dict(request.data).items():
-            if attr == 'others_muscles_worked':
-                for muscle in value:
-                    muscle_obj = Muscle.objects.filter(name=muscle).first()
-                    self.others_muscles_worked.add(muscle_obj)
-            else:
-                if attr == 'main_muscle_worked':
-                    value = Muscle.objects.get(id=int(value[0]))
-                elif attr == 'declination':
-                    value = Declination.objects.get(id=int(value[0]))
-                else:
-                    value = value[0]
-                setattr(self, attr, value)
-        self.save()
+    #
+    # def build(self, request):
+    #     """
+    #     Create an exercice via a request POST.
+    #     :param self:
+    #     :param request: request sended by the API views.
+    #     :return:
+    #     """
+    #
+    #     name_exercice = dict(request.data).get('name')[0]
+    #     main_muscle_worked = dict(request.data).get('main_muscle_worked')[0]
+    #     others_muscles_worked = dict(request.data).get('others_muscles_worked', [])
+    #     declination = dict(request.data).get('declination')[0]
+    #
+    #     self.name = name_exercice
+    #
+    #     self.main_muscle_worked = Muscle.objects.get(id=main_muscle_worked)
+    #     self.declination = Declination.objects.get(id=declination)
+    #     self.save()
+    #
+    #     for muscle in others_muscles_worked:
+    #         muscle_obj = Muscle.objects.get(name=muscle)
+    #         self.others_muscles_worked.add(muscle_obj)
+    #
+    # def update(self, request):
+    #     for attr, value in dict(request.data).items():
+    #         if attr == 'others_muscles_worked':
+    #             for muscle in value:
+    #                 muscle_obj = Muscle.objects.filter(name=muscle).first()
+    #                 self.others_muscles_worked.add(muscle_obj)
+    #         else:
+    #             if attr == 'main_muscle_worked':
+    #                 value = Muscle.objects.get(id=int(value[0]))
+    #             elif attr == 'declination':
+    #                 value = Declination.objects.get(id=int(value[0]))
+    #             else:
+    #                 value = value[0]
+    #             setattr(self, attr, value)
+    #     self.save()
 
 
 class User(AbstractBaseUser, PermissionsMixin):

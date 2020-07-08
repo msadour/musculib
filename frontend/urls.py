@@ -3,5 +3,6 @@ from frontend.views import index
 
 urlpatterns = [
     path(r'', index),
-    path(r'<str>', index),
+    path(r"<page>", index),
+    path(r"<page>/<int:id>", index),
 ]
