@@ -5,7 +5,6 @@ Factories file.
 import factory
 from factory.faker import faker
 
-from django.contrib.auth.models import User
 
 from api_musculib.models import Exercice, Muscle, Declination
 

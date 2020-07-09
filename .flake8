@@ -1,0 +1,5 @@
+[flake8]
+max_line_length = 120
+ignore = A003, W503
+inline-quotes = double
+exclude = **/migrations/*

@@ -131,7 +131,7 @@ class AuthTokenSerializer(serializers.Serializer):
                 return user
             else:
                 return None
-        except:
+        except Exception:
             return None
 
     def validate(self, attrs: Dict):

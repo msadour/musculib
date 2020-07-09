@@ -11,7 +11,6 @@ from .views import (
     MuscleViewSet,
     DeclinationViewSet,
     CustomAuthToken,
-    LogoutViewSet,
 )
 
 
