@@ -24,31 +24,3 @@ This project uses the followed technologies :
 ## Launching
 * Locally, you will have the access to the app by clicking on http://0.0.0.0:3000/
 * The react code is in /frontend/src
-
-## Structure of API Data
-### Exercice
-API URL: http://0.0.0.0:3000/api_musculib/exercice/
-
-### User
-{
-    "id": 1,<br />
-    "password": "password",<br />
-    "last_login": null,<br />
-    "is_superuser": false,<br />
-    "email": "email@gmail.com",<br />
-    "username": "username",<br />
-    "first_name": "",<br />
-    "last_name": "",<br />
-    "groups": [],<br />
-    "user_permissions": [],<br />
-    "favorite_exercice": []<br />
-}
-
-
-### Declination
-
-API URL: http://0.0.0.0:3000/api_musculib/declination/
-
-
-### Muscle
-API URL: http://0.0.0.0:3000/api_musculib/muscle/
