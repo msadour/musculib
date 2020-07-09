@@ -6,6 +6,8 @@ Views.
 
 from __future__ import unicode_literals
 
+from typing import Any
+
 from django.contrib.auth import (
     logout as django_logout
 )
@@ -15,12 +17,13 @@ from django.core.exceptions import ObjectDoesNotExist
 from rest_framework import viewsets, permissions, status
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.decorators import permission_classes
+from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.authtoken.models import Token
 
 
-from .models import Exercice, User, Muscle, Declination
+from .models import Exercice, Customer, Muscle, Declination
 from .serializers import ExerciceSerializer, UserSerializer, MuscleSerializer, DeclinationSerializer, \
     AuthTokenSerializer
 from .classes import SearchCache
@@ -64,14 +67,33 @@ class UserViewSet(viewsets.ModelViewSet):
     Class UserViewSet
     """
 
-    queryset = User.objects.all()
+    queryset = Customer.objects.all()
     serializer_class = UserSerializer
 
+    def create(self, request: Request, *args: Any, **kwargs: Any) -> Response:
+        """Create a member.
 
+        Args:
+            request: request sent by the client.
+            args: Variable length argument list.
+            options: Arbitrary keyword arguments.
+
+        Returns:
+            Response from the server.
+        """
+        datas = request.data
+        new_member = Customer.objects.create_user(**datas)
+
+        serializer = UserSerializer(new_member, many=False)
+
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+@permission_classes((permissions.AllowAny,))
 class CustomAuthToken(ObtainAuthToken):
     authentication_classes = [TokenAuthentication]
 
-    def create(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
 
         serializer = AuthTokenSerializer()
         user = serializer.validate(attrs=request.data)

@@ -38,22 +38,29 @@ class ExercisesList extends Component {
         return (
             <div>
                 {this.state.exercises.map((exercise) => (
-                    <table key={exercise.id}>
-                        <tbody>
-                            <tr>
-                                <th> {exercise.name} </th>
-                            </tr>
+                    <div>
+                        <br /><br />
+                        <table key={exercise.id} className="table result">
+                            <tbody>
+                                <tr className="header_summary">
+                                    <th> <h2>{exercise.name}</h2> </th>
+                                </tr>
 
-                            <tr>
-                                <th>
-                                    <img onClick={() => this.onclick(exercise.id)}
-                                         style={{width:"25%"}}
-                                         src={exercise.display_image}
-                                    />
-                                </th>
-                            </tr>
-                        </tbody>
-                    </table>
+                                <tr>
+                                    <th>
+                                        <img
+                                            className="img_result"
+                                            onClick={() => this.onclick(exercise.id)}
+                                            src={exercise.display_image}
+                                        />
+                                        <br /><br />
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                    </div>
+
                 ))}
             </div>
         )

@@ -1,0 +1,101 @@
+/* ---------------------- General ---------------------- */
+
+h1, h2, p {
+    text-align: center
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center
+}
+
+body {
+    background-color: #00FFFF;
+    width: 100%;
+}
+
+.table {
+    background-color: white;
+    margin: 0 auto;
+}
+
+.header_summary {
+    background-color: #F5A105;
+    line-height: 255%;
+}
+
+/* ---------------------- Home ---------------------- */
+
+#summary {
+    margin: 0 auto;
+    background-color: white;
+    width: 50%;
+}
+
+#image_cover {
+    width: 100%;
+}
+
+.element_summary {
+    line-height: 255%;
+}
+
+/* ---------------------- Results ---------------------- */
+
+.result {
+    width: 60%;
+}
+
+.img_result {
+    margin-left: 15%;
+    width: 70%
+}
+
+/* ---------------------- Detail ---------------------- */
+
+#img_detail {
+    margin-left: 25%;
+    width: 50%
+}
+
+#exercice_detail {
+    width: 75%;
+}
+
+
+/* ---------------------- Others ---------------------- */
+
+#main {
+    margin-left: -0.5%;
+    margin-top: -0.5%;
+}
+
+
+#table_signin {
+    width: 30%
+}
+
+#table_signup {
+    width: 30%
+}
+
+#update_account {
+    width: 50%
+}
+
+.button_add_favorite {
+    margin-left: 35%;
+}
+
+#error_404 {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-top : 20%;
+    margin-left : 35%;
+    width: 30%;
+}
+
+.table_favorite {
+    margin-left: 10%
+}

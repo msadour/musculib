@@ -8,6 +8,7 @@ import ExerciseDetail from './pages/exercises/ExerciseDetail'
 import ExercisesByMuscle from './pages/exercises/ExercisesByMuscle'
 import ExercisesByDeclination from './pages/exercises/ExercisesByDeclination'
 
+import './style.css';
 
 export default class App extends Component {
     render() {

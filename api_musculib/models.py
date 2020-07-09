@@ -64,7 +64,7 @@ class Exercice(models.Model):
         :return: main muscle worked name
         """
 
-        return self.main_muscle_worked.name
+        return self.main_muscle_worked
 
     def get_others_muscles_worked(self):
         """
@@ -73,7 +73,7 @@ class Exercice(models.Model):
         :return: others muscles yorked
         """
 
-        return [muscle.name for muscle in self.others_muscles_worked.all()]
+        return self.others_muscles_worked.all()
 
     def display_image(self):
         """
@@ -83,53 +83,14 @@ class Exercice(models.Model):
         """
 
         return 'media/' + self.declination.name + '/' + self.photo.name
-    #
-    # def build(self, request):
-    #     """
-    #     Create an exercice via a request POST.
-    #     :param self:
-    #     :param request: request sended by the API views.
-    #     :return:
-    #     """
-    #
-    #     name_exercice = dict(request.data).get('name')[0]
-    #     main_muscle_worked = dict(request.data).get('main_muscle_worked')[0]
-    #     others_muscles_worked = dict(request.data).get('others_muscles_worked', [])
-    #     declination = dict(request.data).get('declination')[0]
-    #
-    #     self.name = name_exercice
-    #
-    #     self.main_muscle_worked = Muscle.objects.get(id=main_muscle_worked)
-    #     self.declination = Declination.objects.get(id=declination)
-    #     self.save()
-    #
-    #     for muscle in others_muscles_worked:
-    #         muscle_obj = Muscle.objects.get(name=muscle)
-    #         self.others_muscles_worked.add(muscle_obj)
-    #
-    # def update(self, request):
-    #     for attr, value in dict(request.data).items():
-    #         if attr == 'others_muscles_worked':
-    #             for muscle in value:
-    #                 muscle_obj = Muscle.objects.filter(name=muscle).first()
-    #                 self.others_muscles_worked.add(muscle_obj)
-    #         else:
-    #             if attr == 'main_muscle_worked':
-    #                 value = Muscle.objects.get(id=int(value[0]))
-    #             elif attr == 'declination':
-    #                 value = Declination.objects.get(id=int(value[0]))
-    #             else:
-    #                 value = value[0]
-    #             setattr(self, attr, value)
-    #     self.save()
 
 
-class User(AbstractBaseUser, PermissionsMixin):
+class Customer(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(max_length=255, unique=True)
     username = models.CharField(max_length=255, unique=True)
     first_name = models.CharField(max_length=255, blank=True)
     last_name = models.CharField(max_length=255, blank=True)
-    favorite_exercice = models.ManyToManyField(Exercice)
+    favorite_exercice = models.ManyToManyField(Exercice, blank=True)
 
     USERNAME_FIELD = 'username'
 

@@ -38,25 +38,32 @@ class ExercisesByMuscle extends Component {
         }
         return (
             <div>
+                <br />
                 <h2>Exercices for {this.state.muscle.name}</h2>
+                <hr width="50%" />
+                <br /><br />
 
                 {this.state.muscle.main_muscle_worked.map((exercise) => (
-                    <table key={exercise.id}>
-                        <tbody>
-                            <tr>
-                                <th> {exercise.name} </th>
-                            </tr>
+                    <div>
+                        <table key={exercise.id} className="table result">
+                            <tbody>
+                                <tr className="header_summary">
+                                    <th> {exercise.name} </th>
+                                </tr>
 
-                            <tr>
-                                <th>
-                                    <img onClick={() => this.onclick(exercise.id)}
-                                         style={{width:"25%"}}
-                                         src={"http://0.0.0.0:3000/" + exercise.display_image}
-                                    />
-                                </th>
-                            </tr>
-                        </tbody>
-                    </table>
+                                <tr>
+                                    <th>
+                                        <img
+                                            onClick={() => this.onclick(exercise.id)}
+                                            className="img_result"
+                                            src={"http://0.0.0.0:3000/" + exercise.display_image}
+                                        />
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br /><br />
+                    </div>
                 ))}
             </div>
         )

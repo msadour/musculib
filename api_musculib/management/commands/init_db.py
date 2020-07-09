@@ -6,7 +6,7 @@ import json
 from django.core.management.base import BaseCommand
 
 from musculib.settings import BASE_DIR
-from api_musculib.models import Declination, Muscle, Exercice, User
+from api_musculib.models import Declination, Muscle, Exercice, Customer
 
 
 class Command(BaseCommand):
@@ -25,7 +25,7 @@ class Command(BaseCommand):
         Declination.objects.all().delete()
         Muscle.objects.all().delete()
         Exercice.objects.all().delete()
-        User.objects.all().delete()
+        Customer.objects.all().delete()
 
         with open(datas_files) as json_file:
             datas_list = json.load(json_file)
@@ -46,6 +46,12 @@ class Command(BaseCommand):
                         for others_muscles_worked in exercice["others_muscles_worked"]:
                             others_muscles_worked_obj, _ = Muscle.objects.get_or_create(name=others_muscles_worked)
                             new_exercice_obj.others_muscles_worked.add(others_muscles_worked_obj.id)
-
-
+        Customer.objects.create_user(
+            **{
+                "email": "sadour.mehdi@gmail.com",
+                "username": "sadour.mehdi@gmail.com",
+                "password": "qwertz",
+                "first_name": "Mehdi",
+                "last_name": "Sadour"
+            })
         self.stdout.write("The database has been (re)initlialize.")
