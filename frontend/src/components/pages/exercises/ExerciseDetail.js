@@ -60,8 +60,8 @@ class ExerciseDetail extends Component {
 
                         <tr>
                             <th>
-                                <h2>Muscle thats mainly worked</h2>
-                                <p><a href={"/exercises/muscle/" + this.state.exercise.id} >{ this.state.exercise.main_muscle_worked['name'] }</a></p>
+                                <h2>Muscle thats mainly worked </h2>
+                                <p><a href={"/exercises/muscle/" + this.state.exercise.main_muscle_worked.id} >{ this.state.exercise.main_muscle_worked['name'] }</a></p>
                                 <br />
                             </th>
                         </tr>
