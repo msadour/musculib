@@ -20,7 +20,7 @@ class MuscleNameSerializer(serializers.ModelSerializer):
         """
 
         model = Muscle
-        fields = ('id', 'name')
+        fields = ("id", "name")
 
 
 class ExerciceSerializer(serializers.ModelSerializer):
@@ -28,8 +28,12 @@ class ExerciceSerializer(serializers.ModelSerializer):
     Class who serialize one or many exercice(s) instance.
     """
 
-    main_muscle_worked = MuscleNameSerializer(many=False, source='get_main_muscle_worked')
-    others_muscles_worked = MuscleNameSerializer(many=True, source='get_others_muscles_worked')
+    main_muscle_worked = MuscleNameSerializer(
+        many=False, source="get_main_muscle_worked"
+    )
+    others_muscles_worked = MuscleNameSerializer(
+        many=True, source="get_others_muscles_worked"
+    )
 
     class Meta:
         """
@@ -37,7 +41,15 @@ class ExerciceSerializer(serializers.ModelSerializer):
         """
 
         model = Exercice
-        fields = ['id', 'name', 'main_muscle_worked', 'others_muscles_worked', 'declination', 'display_image', 'description']
+        fields = [
+            "id",
+            "name",
+            "main_muscle_worked",
+            "others_muscles_worked",
+            "declination",
+            "display_image",
+            "description",
+        ]
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -51,7 +63,7 @@ class UserSerializer(serializers.ModelSerializer):
         """
 
         model = Customer
-        fields = '__all__'
+        fields = "__all__"
 
 
 class MuscleSerializer(serializers.ModelSerializer):
@@ -59,8 +71,12 @@ class MuscleSerializer(serializers.ModelSerializer):
     Class MuscleSerializer
     """
 
-    other_muscle_worked = ExerciceSerializer(many=True, source='get_related_other_exercises')
-    main_muscle_worked = ExerciceSerializer(many=True, source='get_related_main_exercises')
+    other_muscle_worked = ExerciceSerializer(
+        many=True, source="get_related_other_exercises"
+    )
+    main_muscle_worked = ExerciceSerializer(
+        many=True, source="get_related_main_exercises"
+    )
 
     class Meta:
         """
@@ -68,7 +84,7 @@ class MuscleSerializer(serializers.ModelSerializer):
         """
 
         model = Muscle
-        fields = ('id', 'name', 'main_muscle_worked', 'other_muscle_worked')
+        fields = ("id", "name", "main_muscle_worked", "other_muscle_worked")
 
 
 class DeclinationSerializer(serializers.ModelSerializer):
@@ -76,7 +92,9 @@ class DeclinationSerializer(serializers.ModelSerializer):
     Class DeclinationSerializer
     """
 
-    related_exercises = ExerciceSerializer(many=True, source='get_related_declination_exercises')
+    related_exercises = ExerciceSerializer(
+        many=True, source="get_related_declination_exercises"
+    )
 
     class Meta:
         """
@@ -84,7 +102,7 @@ class DeclinationSerializer(serializers.ModelSerializer):
         """
 
         model = Declination
-        fields = ('id', 'name', 'related_exercises')
+        fields = ("id", "name", "related_exercises")
 
 
 class AuthTokenSerializer(serializers.Serializer):
@@ -93,7 +111,9 @@ class AuthTokenSerializer(serializers.Serializer):
     """
 
     username = serializers.CharField()
-    password = serializers.CharField(style={"input_type": "password"}, trim_whitespace=False)
+    password = serializers.CharField(
+        style={"input_type": "password"}, trim_whitespace=False
+    )
 
     def authenticate_user(self, username: str = None, password: str = None):
         """Authenticate with username and password.

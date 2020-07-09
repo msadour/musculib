@@ -47,7 +47,7 @@ export default class Home extends Component {
                 <br /><br />
 
                 <div id="intro">
-                    <p>Musculib is a website that provide almost 100 fitness exercices through an internal API.</p>
+                    <p>Musculib is a website that provide almost 100 fitness exercises through an internal API.</p>
                 </div>
                 <br />
 

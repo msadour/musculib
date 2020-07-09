@@ -13,7 +13,8 @@ class Command(BaseCommand):
     """
     Class command.
     """
-    help = 'Init database'
+
+    help = "Init database"
 
     def handle(self, *args, **options):
         """
@@ -44,14 +45,19 @@ class Command(BaseCommand):
                         )
                         new_exercice_obj.save()
                         for others_muscles_worked in exercice["others_muscles_worked"]:
-                            others_muscles_worked_obj, _ = Muscle.objects.get_or_create(name=others_muscles_worked)
-                            new_exercice_obj.others_muscles_worked.add(others_muscles_worked_obj.id)
+                            others_muscles_worked_obj, _ = Muscle.objects.get_or_create(
+                                name=others_muscles_worked
+                            )
+                            new_exercice_obj.others_muscles_worked.add(
+                                others_muscles_worked_obj.id
+                            )
         Customer.objects.create_user(
             **{
                 "email": "sadour.mehdi@gmail.com",
                 "username": "sadour.mehdi@gmail.com",
                 "password": "qwertz",
                 "first_name": "Mehdi",
-                "last_name": "Sadour"
-            })
+                "last_name": "Sadour",
+            }
+        )
         self.stdout.write("The database has been (re)initlialize.")

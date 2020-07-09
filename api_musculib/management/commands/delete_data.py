@@ -13,7 +13,8 @@ class Command(BaseCommand):
     """
     Class command.
     """
-    help = 'Delete database'
+
+    help = "Delete database"
 
     def handle(self, *args, **options):
         """

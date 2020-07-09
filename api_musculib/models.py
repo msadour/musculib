@@ -57,11 +57,19 @@ class Exercice(models.Model):
     """
 
     name = models.CharField(max_length=300)
-    main_muscle_worked = models.ForeignKey(Muscle, on_delete=models.CASCADE, related_name="main_muscle_worked")
-    others_muscles_worked = models.ManyToManyField(Muscle, related_name="other_muscle_worked")
-    declination = models.ForeignKey(Declination, on_delete=models.CASCADE, related_name="declinations")
-    photo = models.ImageField(upload_to='static/img/exercices/', default='exercices/no_found.png')
-    description = models.CharField(max_length=1000, default='Not yet description')
+    main_muscle_worked = models.ForeignKey(
+        Muscle, on_delete=models.CASCADE, related_name="main_muscle_worked"
+    )
+    others_muscles_worked = models.ManyToManyField(
+        Muscle, related_name="other_muscle_worked"
+    )
+    declination = models.ForeignKey(
+        Declination, on_delete=models.CASCADE, related_name="declinations"
+    )
+    photo = models.ImageField(
+        upload_to="static/img/exercices/", default="exercices/no_found.png"
+    )
+    description = models.CharField(max_length=1000, default="Not yet description")
 
     def get_main_muscle_worked(self):
         """Return the name of the main muscle used (using for serializer)
@@ -85,7 +93,7 @@ class Exercice(models.Model):
         :param self:
         :return: path of the image
         """
-        return 'media/' + self.declination.name + '/' + self.photo.name
+        return "media/" + self.declination.name + "/" + self.photo.name
 
 
 class Customer(AbstractBaseUser, PermissionsMixin):
@@ -95,7 +103,7 @@ class Customer(AbstractBaseUser, PermissionsMixin):
     last_name = models.CharField(max_length=255, blank=True)
     favorite_exercice = models.ManyToManyField(Exercice, blank=True)
 
-    USERNAME_FIELD = 'username'
+    USERNAME_FIELD = "username"
 
     objects = CustomUserManager()
 

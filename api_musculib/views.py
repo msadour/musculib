@@ -8,9 +8,7 @@ from __future__ import unicode_literals
 
 from typing import Any
 
-from django.contrib.auth import (
-    logout as django_logout
-)
+from django.contrib.auth import logout as django_logout
 
 from django.conf import settings
 from django.core.exceptions import ObjectDoesNotExist
@@ -24,8 +22,13 @@ from rest_framework.authtoken.models import Token
 
 
 from .models import Exercice, Customer, Muscle, Declination
-from .serializers import ExerciceSerializer, UserSerializer, MuscleSerializer, DeclinationSerializer, \
-    AuthTokenSerializer
+from .serializers import (
+    ExerciceSerializer,
+    UserSerializer,
+    MuscleSerializer,
+    DeclinationSerializer,
+    AuthTokenSerializer,
+)
 from .permissions import ActionsAllowed
 
 
@@ -36,6 +39,7 @@ class ExerciceViewSet(viewsets.ModelViewSet):
 
     queryset = Exercice.objects.all()
     serializer_class = ExerciceSerializer
+    permission_classes = (ActionsAllowed,)
 
 
 class MuscleViewSet(viewsets.ModelViewSet):
@@ -45,9 +49,7 @@ class MuscleViewSet(viewsets.ModelViewSet):
 
     queryset = Muscle.objects.all()
     serializer_class = MuscleSerializer
-
-    permission_classes = (ActionsAllowed, )
-    authentication_classes = (TokenAuthentication,)
+    permission_classes = (ActionsAllowed,)
 
 
 class DeclinationViewSet(viewsets.ModelViewSet):
@@ -57,6 +59,7 @@ class DeclinationViewSet(viewsets.ModelViewSet):
 
     queryset = Declination.objects.all()
     serializer_class = DeclinationSerializer
+    permission_classes = (ActionsAllowed,)
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -96,16 +99,13 @@ class CustomAuthToken(ObtainAuthToken):
         user = serializer.validate(attrs=request.data)
 
         token, created = Token.objects.get_or_create(user=user)
-        return Response({
-            'token': token.key,
-            'username': user.username,
-            'member_id': user.id
-        })
+        return Response(
+            {"token": token.key, "username": user.username, "member_id": user.id}
+        )
 
 
 @permission_classes((permissions.AllowAny,))
 class LogoutViewSet(viewsets.ViewSet):
-
     def create(self, request: Request, *args: Any, **kwargs: Any):
         return self.logout(request)
 
@@ -115,9 +115,11 @@ class LogoutViewSet(viewsets.ViewSet):
             request.user.auth_token.delete()
         except (AttributeError, ObjectDoesNotExist):
             pass
-        if getattr(settings, 'REST_SESSION_LOGIN', True):
+        if getattr(settings, "REST_SESSION_LOGIN", True):
             django_logout(request)
 
-        response = Response({"detail": "Successfully logged out."}, status=status.HTTP_200_OK)
+        response = Response(
+            {"detail": "Successfully logged out."}, status=status.HTTP_200_OK
+        )
 
         return response
