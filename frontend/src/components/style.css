@@ -24,6 +24,11 @@ body {
     line-height: 255%;
 }
 
+.img_go_home {
+    width: 4%;
+    margin-left: 2%;
+}
+
 /* ---------------------- Home ---------------------- */
 
 #summary {

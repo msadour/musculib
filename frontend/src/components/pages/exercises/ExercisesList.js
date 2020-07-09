@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 class ExercisesList extends Component {
 
@@ -13,7 +14,7 @@ class ExercisesList extends Component {
     }
 
     componentDidMount() {
-        fetch("/api_musculib/exercice/")
+        fetch("/api_musculib/exercise/")
         .then(response => response.json())
         .then((data) => {
             this.setState({ exercises: data})
@@ -37,9 +38,14 @@ class ExercisesList extends Component {
         }
         return (
             <div>
+                <br />
+                <Link to='/'>
+                    <img className="img_go_home" src="http://0.0.0.0:3000/media/home.png" />
+                </Link>
+                <br />
                 {this.state.exercises.map((exercise) => (
-                    <div>
-                        <br /><br />
+                    <div key={exercise.id}>
+                        <br />
                         <table key={exercise.id} className="table result">
                             <tbody>
                                 <tr className="header_summary">

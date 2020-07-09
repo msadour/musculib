@@ -26,10 +26,7 @@ from rest_framework.authtoken.models import Token
 from .models import Exercice, Customer, Muscle, Declination
 from .serializers import ExerciceSerializer, UserSerializer, MuscleSerializer, DeclinationSerializer, \
     AuthTokenSerializer
-from .classes import SearchCache
 from .permissions import ActionsAllowed
-
-searching = SearchCache()
 
 
 class ExerciceViewSet(viewsets.ModelViewSet):
@@ -93,7 +90,7 @@ class UserViewSet(viewsets.ModelViewSet):
 class CustomAuthToken(ObtainAuthToken):
     authentication_classes = [TokenAuthentication]
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request: Request, *args: Any, **kwargs: Any):
 
         serializer = AuthTokenSerializer()
         user = serializer.validate(attrs=request.data)
@@ -109,10 +106,10 @@ class CustomAuthToken(ObtainAuthToken):
 @permission_classes((permissions.AllowAny,))
 class LogoutViewSet(viewsets.ViewSet):
 
-    def create(self, request, *args, **kwargs):
+    def create(self, request: Request, *args: Any, **kwargs: Any):
         return self.logout(request)
 
-    def logout(self, request):
+    def logout(self, request: Request):
 
         try:
             request.user.auth_token.delete()

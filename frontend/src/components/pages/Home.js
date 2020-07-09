@@ -58,6 +58,11 @@ export default class Home extends Component {
                             <th > <b>URL</b></th>
                         </tr>
 
+                            <tr className="element_summary" >
+                                <th> All exercises </th>
+                                <th > <a  href={"/exercises"} >Click here</a></th>
+                            </tr>
+
                         {this.state.muscles.map((muscle) => (
                             <tr className="element_summary" key={muscle.id}>
                                 <th> Exercises that work mainly {muscle.name} </th>
@@ -77,7 +82,7 @@ export default class Home extends Component {
 
                         {this.state.declinations.map((declination) => (
                             <tr key={declination.id}>
-                                <th>Exercises that you can do in/with {declination.name} </th>
+                                <th>Exercises that you can do with {declination.name} </th>
                                 <th > <a  href={"/exercises/declination/" + declination.id} >Click here</a></th>
                             </tr>
                         ))}

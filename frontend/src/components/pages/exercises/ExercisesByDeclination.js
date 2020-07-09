@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { useState, useEffect } from 'react';
 
+import { Link } from "react-router-dom";
 
 class ExercisesByDeclination extends Component {
 
@@ -30,7 +31,7 @@ class ExercisesByDeclination extends Component {
     }
 
     render() {
-        if (this.state.declination.related_exercices == undefined) {
+        if (this.state.declination.related_exercises == undefined) {
             return (
                 <div>Exercies loading...</div>
             )
@@ -39,12 +40,16 @@ class ExercisesByDeclination extends Component {
         return (
             <div>
                 <br />
-                <h2>Exercices that you can use with/in {this.state.declination.name}</h2>
+                <Link to='/'>
+                    <img className="img_go_home" src="http://0.0.0.0:3000/media/home.png" />
+                </Link>
+                <br />
+                <h2>Exercises that you can use with/in {this.state.declination.name}</h2>
                 <hr width="50%" />
                 <br /><br />
 
-                {this.state.declination.related_exercices.map((exercise) => (
-                    <div>
+                {this.state.declination.related_exercises.map((exercise) => (
+                    <div key={exercise.id}>
                         <table key={exercise.id} className="table result">
                             <tbody>
                                 <tr className="header_summary">

@@ -9,7 +9,7 @@ from .views import ExerciceViewSet, UserViewSet, MuscleViewSet, DeclinationViewS
 
 
 router = DefaultRouter()
-router.register(r'exercice', ExerciceViewSet, basename='exercice')
+router.register(r'exercise', ExerciceViewSet, basename='exercise')
 router.register(r'user', UserViewSet, basename='user')
 router.register(r'muscle', MuscleViewSet, basename='muscle')
 router.register(r'declination', DeclinationViewSet, basename='declination')

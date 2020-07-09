@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 import axios from 'axios';
 
@@ -15,11 +16,10 @@ class ExerciseDetail extends Component {
     }
 
     componentDidMount() {
-        fetch("/api_musculib/exercice/" + this.props.match.params.id + "/")
+        fetch("/api_musculib/exercise/" + this.props.match.params.id + "/")
         .then(response => response.json())
         .then((data) => {
             this.setState({ exercise: data})
-            console.log(this.state.exercise)
         })
         .catch((err) => {
             alert("error");
@@ -38,7 +38,11 @@ class ExerciseDetail extends Component {
 
         return (
             <div>
-                <br /><br />
+                <br />
+                <Link to='/'>
+                    <img className="img_go_home" src="http://0.0.0.0:3000/media/home.png" />
+                </Link>
+                <br />
                 <table id="exercice_detail" className="table">
                     <tbody>
                         <tr>

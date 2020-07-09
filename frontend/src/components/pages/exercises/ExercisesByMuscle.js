@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { useState, useEffect } from 'react';
 
+import { Link } from "react-router-dom";
+
 
 class ExercisesByMuscle extends Component {
 
@@ -39,12 +41,16 @@ class ExercisesByMuscle extends Component {
         return (
             <div>
                 <br />
+                <Link to='/'>
+                    <img className="img_go_home" src="http://0.0.0.0:3000/media/home.png" />
+                </Link>
+                <br />
                 <h2>Exercices for {this.state.muscle.name}</h2>
                 <hr width="50%" />
                 <br /><br />
 
                 {this.state.muscle.main_muscle_worked.map((exercise) => (
-                    <div>
+                    <div key={exercise.id}>
                         <table key={exercise.id} className="table result">
                             <tbody>
                                 <tr className="header_summary">

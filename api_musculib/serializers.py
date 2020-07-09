@@ -1,6 +1,8 @@
 """
 Serializers file.
 """
+from typing import Dict
+
 from django.contrib.auth.hashers import check_password
 from rest_framework import serializers
 
@@ -8,8 +10,15 @@ from .models import Exercice, Customer, Muscle, Declination
 
 
 class MuscleNameSerializer(serializers.ModelSerializer):
+    """
+    Class MuscleNameSerializer
+    """
 
     class Meta:
+        """
+        Class Meta
+        """
+
         model = Muscle
         fields = ('id', 'name')
 
@@ -23,53 +32,80 @@ class ExerciceSerializer(serializers.ModelSerializer):
     others_muscles_worked = MuscleNameSerializer(many=True, source='get_others_muscles_worked')
 
     class Meta:
+        """
+        Class Meta
+        """
+
         model = Exercice
         fields = ['id', 'name', 'main_muscle_worked', 'others_muscles_worked', 'declination', 'display_image', 'description']
 
 
 class UserSerializer(serializers.ModelSerializer):
+    """
+    Class UserSerializer
+    """
 
     class Meta:
+        """
+        Class Meta
+        """
+
         model = Customer
         fields = '__all__'
 
 
 class MuscleSerializer(serializers.ModelSerializer):
+    """
+    Class MuscleSerializer
+    """
 
-    other_muscle_worked = ExerciceSerializer(many=True, source='get_related_other_exercices')
-    main_muscle_worked = ExerciceSerializer(many=True, source='get_related_main_exercices')
+    other_muscle_worked = ExerciceSerializer(many=True, source='get_related_other_exercises')
+    main_muscle_worked = ExerciceSerializer(many=True, source='get_related_main_exercises')
 
     class Meta:
+        """
+        Class Meta
+        """
+
         model = Muscle
         fields = ('id', 'name', 'main_muscle_worked', 'other_muscle_worked')
 
 
 class DeclinationSerializer(serializers.ModelSerializer):
+    """
+    Class DeclinationSerializer
+    """
 
-    related_exercices = ExerciceSerializer(many=True, source='get_related_declination_exercices')
+    related_exercises = ExerciceSerializer(many=True, source='get_related_declination_exercises')
 
     class Meta:
+        """
+        Class Meta
+        """
+
         model = Declination
-        fields = ('id', 'name', 'related_exercices')
+        fields = ('id', 'name', 'related_exercises')
 
 
 class AuthTokenSerializer(serializers.Serializer):
-    """Serializer for the user authentication object.
-
-    Attributes:
-        email (str):
-        password (str):
+    """
+    Serializer for the user authentication object.
     """
 
     username = serializers.CharField()
     password = serializers.CharField(style={"input_type": "password"}, trim_whitespace=False)
 
-    def authenticate_user(self, username=None, password=None):
+    def authenticate_user(self, username: str = None, password: str = None):
+        """Authenticate with username and password.
+
+        Args:
+            username:
+            password:
+
+        Returns:
+            User.
+        """
         try:
-            # Try to find a user matching your username
-            print('-------------------- authenticate_user')
-            print(password)
-            print(Customer.objects.all())
             user = Customer.objects.get(username=username)
             if check_password(password, user.password):
                 return user
@@ -78,8 +114,15 @@ class AuthTokenSerializer(serializers.Serializer):
         except:
             return None
 
-    def validate(self, attrs):
+    def validate(self, attrs: Dict):
+        """Validate a member with credentials.
 
+        Args:
+            attrs: Datas from the view.
+
+        Returns:
+            User authenticate.
+        """
         username = attrs.get("username")
         password = attrs.get("password")
         user = self.authenticate_user(username=username, password=password)
