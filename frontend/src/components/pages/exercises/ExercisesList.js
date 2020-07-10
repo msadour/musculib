@@ -49,16 +49,17 @@ class ExercisesList extends Component {
                         <table key={exercise.id} className="table result">
                             <tbody>
                                 <tr className="header_summary">
-                                    <th> <h2>{exercise.name}</h2> </th>
+                                    <th> <p className="text text_summary">{exercise.name}</p> </th>
                                 </tr>
 
                                 <tr>
                                     <th>
-                                        <img
-                                            className="img_result"
-                                            onClick={() => this.onclick(exercise.id)}
-                                            src={"../../../../../" + exercise.display_image}
-                                        />
+                                        <Link to={"/exercises_detail/" + exercise.id}>
+                                            <img
+                                                className="img_result"
+                                                src={"../../../../../" + exercise.display_image}
+                                            />
+                                        </ Link>
                                         <br /><br />
                                     </th>
                                 </tr>

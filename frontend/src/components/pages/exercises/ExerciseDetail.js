@@ -46,7 +46,7 @@ class ExerciseDetail extends Component {
                 <table id="exercice_detail" className="table">
                     <tbody>
                         <tr>
-                            <th className="header_summary"> <p>{this.state.exercise.name}</p> </th>
+                            <th className="header_summary"> <p className="text text_summary">{this.state.exercise.name}</p> </th>
                         </tr>
 
                         <tr>
@@ -56,17 +56,19 @@ class ExerciseDetail extends Component {
                         <tr>
                             <th>
                                 <br />
-                                <h2>Description</h2>
-                                {this.state.exercise.description}
-                                <br /> <br />
+                                <p className="text title title_third">Description</p> <br />
+                                <p className="text paragraph"> {this.state.exercise.description}</p>
+                                <br />
                             </th>
                         </tr>
 
                         <tr>
                             <th>
-                                <h2>Muscle thats mainly worked </h2>
-                                <p><a href={"/exercises/muscle/" + this.state.exercise.main_muscle_worked.id} >{ this.state.exercise.main_muscle_worked['name'] }</a></p>
-                                <br />
+                                <p className="text title title_third">Muscle thats mainly worked </p> <br />
+                                <a className="text paragraph link_muscles" href={"/exercises/muscle/" + this.state.exercise.main_muscle_worked.id} >
+                                { this.state.exercise.main_muscle_worked['name'] }
+                                </a>
+                                <br /><br />
                             </th>
                         </tr>
 
@@ -75,11 +77,11 @@ class ExerciseDetail extends Component {
                         ) : (
                             <tr>
                                 <th >
-                                    <h2>Other(s) muscle(s) secondary used</h2>
+                                    <p className="text title title_third">Other(s) muscle(s) secondary used</p>
                                     {this.state.exercise.others_muscles_worked.map((muscle) => (
                                         <div key={muscle.id}>
-                                            <p><a  href={"/exercises/muscle/" + muscle.id} >{ muscle.name }</a></p>
-                                            <br />
+                                            <a className="text paragraph link_muscles" href={"/exercises/muscle/" + muscle.id} >{ muscle.name }</a>
+                                            <br /><br />
                                         </div>
 
                                     ))}

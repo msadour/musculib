@@ -41,32 +41,32 @@ export default class Home extends Component {
             <div>
                 <img src="../../../../media/other/cover.png" id="image_cover"/>
                 <br /><br /><br />
-                <h1>Welcome to MuscuLib</h1>
-                <hr width="80%" />
+                <p className="text title title_main"> Welcome to Musculib </p>
+                <hr style={{width:"80%", backgroundColor:"white"}} />
 
                 <br /><br />
 
                 <div id="intro">
-                    <p>Musculib is a website that provide almost 100 fitness exercises through an internal API.</p>
+                    <p className="text" id="intro">Musculib is a website that provide almost 100 fitness exercises through an internal API.</p>
                 </div>
                 <br />
 
                 <table id="summary" className="table" border="1">
                     <tbody>
                         <tr className="element_summary header_summary">
-                            <th> <b>MUSCLE</b> </th>
-                            <th > <b>URL</b></th>
+                            <th> <p className="text text_summary">MUSCLE</p> </th>
+                            <th > <p className="text text_summary">URL</p></th>
                         </tr>
 
                             <tr className="element_summary" >
-                                <th> All exercises </th>
-                                <th > <a  href={"/exercises"} >Click here</a></th>
+                                <th> <p className="text paragraph"> All exercises </p> </th>
+                                <th > <a className="text paragraph" href={"/exercises"} >Click here</a></th>
                             </tr>
 
                         {this.state.muscles.map((muscle) => (
                             <tr className="element_summary" key={muscle.id}>
-                                <th> Exercises that work mainly {muscle.name} </th>
-                                <th > <a  href={"/exercises/muscle/" + muscle.id} >Click here</a></th>
+                                <th> <p className="text paragraph"> Exercises that work mainly {muscle.name} </p> </th>
+                                <th > <a className="text paragraph" href={"/exercises/muscle/" + muscle.id} >Click here</a></th>
                             </tr>
                         ))}
                     </tbody>
@@ -76,14 +76,14 @@ export default class Home extends Component {
                 <table id="summary" className="table" border="1">
                     <tbody>
                         <tr className="element_summary header_summary">
-                            <th> <b>DECLINATION</b> </th>
-                            <th > <b>URL</b></th>
+                            <th> <p className="text text_summary">DECLINATION</p> </th>
+                            <th> <p className="text text_summary">URL</p></th>
                         </tr>
 
                         {this.state.declinations.map((declination) => (
                             <tr key={declination.id}>
-                                <th>Exercises that you can do with {declination.name} </th>
-                                <th > <a  href={"/exercises/declination/" + declination.id} >Click here</a></th>
+                                <th> <p className="text paragraph"> Exercises that need {declination.name} </p> </th>
+                                <th > <a className="text paragraph" href={"/exercises/declination/" + declination.id} >Click here</a></th>
                             </tr>
                         ))}
                     </tbody>

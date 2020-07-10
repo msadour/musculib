@@ -45,7 +45,7 @@ class ExercisesByMuscle extends Component {
                     <img className="img_go_home" src="../../../../../media/other/home.png" />
                 </Link>
                 <br />
-                <h2>Exercices for {this.state.muscle.name}</h2>
+                <p className="text title title_second">Exercices for {this.state.muscle.name}</p>
                 <hr width="50%" />
                 <br /><br />
 
@@ -54,16 +54,17 @@ class ExercisesByMuscle extends Component {
                         <table key={exercise.id} className="table result">
                             <tbody>
                                 <tr className="header_summary">
-                                    <th> {exercise.name} </th>
+                                    <th> <p className="text text_summary"> {exercise.name} </p></th>
                                 </tr>
 
                                 <tr>
                                     <th>
-                                        <img
-                                            onClick={() => this.onclick(exercise.id)}
-                                            className="img_result"
-                                            src={"../../../../../" + exercise.display_image}
-                                        />
+                                        <Link to={"/exercises_detail/" + exercise.id}>
+                                            <img
+                                                className="img_result"
+                                                src={"../../../../../" + exercise.display_image}
+                                            />
+                                        </ Link>
                                     </th>
                                 </tr>
                             </tbody>

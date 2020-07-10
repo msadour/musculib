@@ -1,32 +1,71 @@
 /* ---------------------- General ---------------------- */
 
-h1, h2, p {
-    text-align: center
-}
-
-p {
-    font-size: 1.5em;
-    text-align: center
-}
-
-body {
-    background-color: #00FFFF;
-    width: 100%;
-}
-
 .table {
     background-color: white;
     margin: 0 auto;
 }
 
 .header_summary {
-    background-color: #F5A105;
+    background-color: black;
     line-height: 255%;
 }
 
 .img_go_home {
     width: 4%;
     margin-left: 2%;
+}
+
+body {
+    width: 100%;
+}
+
+
+/* ---------------------- Text ---------------------- */
+
+
+.text {
+    font-family: 'Bebas Neue';
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.title_main {
+    color: white;
+    font-size: 3em;
+}
+
+.title_second {
+    color: white;
+    font-size: 2.3em;
+}
+
+.title_third {
+    color: black;
+    font-size: 1.5em;
+}
+
+.text_summary {
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-size: 1.2em;
+}
+
+.link_muscles {
+    margin-left: 47%;
+}
+
+#intro {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
 }
 
 /* ---------------------- Home ---------------------- */
