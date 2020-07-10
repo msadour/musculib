@@ -42,7 +42,7 @@ class ExercisesByMuscle extends Component {
             <div>
                 <br />
                 <Link to='/'>
-                    <img className="img_go_home" src="http://0.0.0.0:3000/media/home.png" />
+                    <img className="img_go_home" src="../../../../../media/home.png" />
                 </Link>
                 <br />
                 <h2>Exercices for {this.state.muscle.name}</h2>
@@ -62,7 +62,7 @@ class ExercisesByMuscle extends Component {
                                         <img
                                             onClick={() => this.onclick(exercise.id)}
                                             className="img_result"
-                                            src={"http://0.0.0.0:3000/" + exercise.display_image}
+                                            src={"../../../../../" + exercise.display_image}
                                         />
                                     </th>
                                 </tr>

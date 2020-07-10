@@ -40,7 +40,7 @@ class ExerciseDetail extends Component {
             <div>
                 <br />
                 <Link to='/'>
-                    <img className="img_go_home" src="http://0.0.0.0:3000/media/home.png" />
+                    <img className="img_go_home" src="../../../../../media/home.png" />
                 </Link>
                 <br />
                 <table id="exercice_detail" className="table">
@@ -50,7 +50,7 @@ class ExerciseDetail extends Component {
                         </tr>
 
                         <tr>
-                            <th> <img id="img_detail" src={"http://0.0.0.0:3000/" + this.state.exercise.display_image} /> </th>
+                            <th> <img id="img_detail" src={"../../../../../" + this.state.exercise.display_image} /> </th>
                         </tr>
 
                         <tr>

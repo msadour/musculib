@@ -41,7 +41,7 @@ class ExercisesByDeclination extends Component {
             <div>
                 <br />
                 <Link to='/'>
-                    <img className="img_go_home" src="http://0.0.0.0:3000/media/home.png" />
+                    <img className="img_go_home" src="../../../../../media/home.png" />
                 </Link>
                 <br />
                 <h2>Exercises that you can use with/in {this.state.declination.name}</h2>
@@ -60,7 +60,7 @@ class ExercisesByDeclination extends Component {
                                     <th>
                                         <img onClick={() => this.onclick(exercise.id)}
                                              className="img_result"
-                                             src={"http://0.0.0.0:3000/" + exercise.display_image}
+                                             src={"../../../../../" + exercise.display_image}
                                         />
                                     </th>
                                 </tr>

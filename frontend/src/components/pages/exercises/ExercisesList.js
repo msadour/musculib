@@ -40,7 +40,7 @@ class ExercisesList extends Component {
             <div>
                 <br />
                 <Link to='/'>
-                    <img className="img_go_home" src="http://0.0.0.0:3000/media/home.png" />
+                    <img className="img_go_home" src="../../../../../media/home.png" />
                 </Link>
                 <br />
                 {this.state.exercises.map((exercise) => (
@@ -57,7 +57,7 @@ class ExercisesList extends Component {
                                         <img
                                             className="img_result"
                                             onClick={() => this.onclick(exercise.id)}
-                                            src={exercise.display_image}
+                                            src={"../../../../../" + exercise.display_image}
                                         />
                                         <br /><br />
                                     </th>
