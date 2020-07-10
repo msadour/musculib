@@ -12,6 +12,7 @@ from django.contrib.auth import logout as django_logout
 
 from django.conf import settings
 from django.core.exceptions import ObjectDoesNotExist
+from django.db.models import Q
 from rest_framework import viewsets, permissions, status
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.decorators import permission_classes
@@ -32,7 +33,7 @@ from .serializers import (
 from .permissions import ActionsAllowed
 
 
-class ExerciceViewSet(viewsets.ModelViewSet):
+class ExerciseViewSet(viewsets.ModelViewSet):
     """
     Class ExerciceViewSet
     """
@@ -40,6 +41,25 @@ class ExerciceViewSet(viewsets.ModelViewSet):
     queryset = Exercice.objects.all()
     serializer_class = ExerciceSerializer
     permission_classes = (ActionsAllowed,)
+
+    def list(self, request: Request, *args: Any, **kwargs: Any) -> Response:
+        """
+        List of exercises.
+
+        Args:
+            request: request sent by the client.
+            args: Variable length argument list.
+            options: Arbitrary keyword arguments.
+
+        Returns:
+            Response from the server.
+        """
+        if request.query_params:
+            search = request.query_params
+            self.queryset = self.queryset.filter(Q(name__icontains=search["search"]))
+            serializer = ExerciceSerializer(self.queryset, many=True)
+            return Response(serializer.data, status=200)
+        return super().list(request, *args, **kwargs)
 
 
 class MuscleViewSet(viewsets.ModelViewSet):

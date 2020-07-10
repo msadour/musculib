@@ -29,19 +29,32 @@ class ExercisesList extends Component {
         this.props.history.push("/exercises_detail/" + id)
     }
 
+    onChange(e) {
+        fetch('/api_musculib/exercise?search=' + e.target.value)
+        .then(response => response.json())
+        .then((data) => {
+            this.setState({exercises: data});
+        })
+        .catch(err => {
+            alert('error');
+        });
+    }
+
     render() {
 
-        if (this.state.exercises.length == 0) {
-            return (
-                <div>Exercies loading...</div>
-            )
-        }
         return (
             <div>
                 <br />
                 <Link to='/'>
                     <img className="img_go_home" src="../../../../../media/other/home.png" />
                 </Link>
+
+               <input
+                style={{"border":"1px solid black", width: "30%", padding: "0.9%", marginLeft: "30%"}}
+                placeholder="Filter exercises.."
+                onChange={(e) => this.onChange(e)}
+               />
+
                 <br />
                 {this.state.exercises.map((exercise) => (
                     <div key={exercise.id}>

@@ -6,7 +6,7 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 
 from .views import (
-    ExerciceViewSet,
+    ExerciseViewSet,
     UserViewSet,
     MuscleViewSet,
     DeclinationViewSet,
@@ -15,7 +15,7 @@ from .views import (
 
 
 router = DefaultRouter()
-router.register(r"exercise", ExerciceViewSet, basename="exercise")
+router.register(r"exercise", ExerciseViewSet, basename="exercise")
 router.register(r"user", UserViewSet, basename="user")
 router.register(r"muscle", MuscleViewSet, basename="muscle")
 router.register(r"declination", DeclinationViewSet, basename="declination")
