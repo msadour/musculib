@@ -42,7 +42,7 @@ class ExercisesByMuscle extends Component {
             <div>
                 <br />
                 <Link to='/'>
-                    <img className="img_go_home" src="../../../../../media/home.png" />
+                    <img className="img_go_home" src="../../../../../media/other/home.png" />
                 </Link>
                 <br />
                 <h2>Exercices for {this.state.muscle.name}</h2>

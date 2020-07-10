@@ -40,7 +40,7 @@ class ExercisesList extends Component {
             <div>
                 <br />
                 <Link to='/'>
-                    <img className="img_go_home" src="../../../../../media/home.png" />
+                    <img className="img_go_home" src="../../../../../media/other/home.png" />
                 </Link>
                 <br />
                 {this.state.exercises.map((exercise) => (

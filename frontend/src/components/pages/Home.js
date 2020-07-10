@@ -39,7 +39,7 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <img src="media/cover_image.png" id="image_cover"/>
+                <img src="media/other/cover_image.png" id="image_cover"/>
                 <br /><br /><br />
                 <h1>Welcome to MuscuLib</h1>
                 <hr width="80%" />
