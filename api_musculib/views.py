@@ -109,6 +109,35 @@ class CustomerViewSet(viewsets.ModelViewSet):
 
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
+    def update(
+        self, request: Request, pk: int = None, *args: Any, **kwargs: Any
+    ) -> Response:
+        """Update a member.
+
+        Args:
+            request: request sent by the client.
+            pk: id of the object to be updated.
+            args: Variable length argument list.
+            options: Arbitrary keyword arguments.
+
+        Returns:
+            Response from the server.
+        """
+        datas = request.data
+        customer = Customer.objects.get(id=pk)
+        for attr, value in datas.items():
+            if attr == "password":
+                customer.set_password(value)
+            elif attr == "email":
+                customer.email = datas["email"]
+                customer.username = datas["email"]
+            else:
+                setattr(customer, attr, value)
+        customer.save()
+        serializer = CustomerSerializer(customer)
+
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
 
 @permission_classes((permissions.AllowAny,))
 class CustomAuthToken(ObtainAuthToken):

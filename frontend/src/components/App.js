@@ -8,6 +8,7 @@ import ExerciseDetail from './pages/exercises/ExerciseDetail';
 import ExercisesByMuscle from './pages/exercises/ExercisesByMuscle';
 import ExercisesByDeclination from './pages/exercises/ExercisesByDeclination';
 import Login from './pages/users/Login';
+import ManageAccount from './pages/users/ManageAccount';
 
 import './style.css';
 
@@ -26,6 +27,7 @@ export default class App extends Component {
                             <Route path="/exercises/declination/:id" component={ExercisesByDeclination}/>
                             <Route path="/exercises/muscle/:id" component={ExercisesByMuscle}/>
                             <Route exact path='/login' component={Login} />
+                            <Route exact path='/manage_account' component={ManageAccount} />
                         </Switch>
                     </div>
                 </Fragment>
