@@ -52,7 +52,7 @@ class ExerciceSerializer(serializers.ModelSerializer):
         ]
 
 
-class UserSerializer(serializers.ModelSerializer):
+class CustomerSerializer(serializers.ModelSerializer):
     """
     Class UserSerializer
     """

@@ -7,19 +7,20 @@ from rest_framework.routers import DefaultRouter
 
 from .views import (
     ExerciseViewSet,
-    UserViewSet,
+    CustomerViewSet,
     MuscleViewSet,
     DeclinationViewSet,
     CustomAuthToken,
+    LogoutViewSet
 )
 
 
 router = DefaultRouter()
 router.register(r"exercise", ExerciseViewSet, basename="exercise")
-router.register(r"user", UserViewSet, basename="user")
 router.register(r"muscle", MuscleViewSet, basename="muscle")
 router.register(r"declination", DeclinationViewSet, basename="declination")
-router.register(r"logout", DeclinationViewSet, basename="declination")
+router.register(r"customer", CustomerViewSet, basename="customer")
+router.register(r"logout", LogoutViewSet, basename="logout")
 
 urlpatterns = router.urls
 

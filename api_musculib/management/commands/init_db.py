@@ -51,13 +51,4 @@ class Command(BaseCommand):
                             new_exercice_obj.others_muscles_worked.add(
                                 others_muscles_worked_obj.id
                             )
-        Customer.objects.create_user(
-            **{
-                "email": "sadour.mehdi@gmail.com",
-                "username": "sadour.mehdi@gmail.com",
-                "password": "qwertz",
-                "first_name": "Mehdi",
-                "last_name": "Sadour",
-            }
-        )
         self.stdout.write("The database has been (re)initlialize.")

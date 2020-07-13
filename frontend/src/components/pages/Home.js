@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { useState, useEffect } from 'react';
 
-import Menu from '../layout/Menu';
+import Menu from './menu/Menu';
 
 
 export default class Home extends Component {
@@ -40,6 +40,8 @@ export default class Home extends Component {
         return (
             <div>
                 <img src="../../../../media/other/cover.png" id="image_cover"/>
+                <br /><br /><br />
+                <Menu />
                 <br /><br /><br />
                 <p className="text title title_main"> Welcome to Musculib </p>
                 <hr style={{width:"80%", backgroundColor:"white"}} />

@@ -25,7 +25,7 @@ from rest_framework.authtoken.models import Token
 from .models import Exercice, Customer, Muscle, Declination
 from .serializers import (
     ExerciceSerializer,
-    UserSerializer,
+    CustomerSerializer,
     MuscleSerializer,
     DeclinationSerializer,
     AuthTokenSerializer,
@@ -82,13 +82,13 @@ class DeclinationViewSet(viewsets.ModelViewSet):
     permission_classes = (ActionsAllowed,)
 
 
-class UserViewSet(viewsets.ModelViewSet):
+class CustomerViewSet(viewsets.ModelViewSet):
     """
     Class UserViewSet
     """
 
     queryset = Customer.objects.all()
-    serializer_class = UserSerializer
+    serializer_class = CustomerSerializer
 
     def create(self, request: Request, *args: Any, **kwargs: Any) -> Response:
         """Create a member.
@@ -101,10 +101,11 @@ class UserViewSet(viewsets.ModelViewSet):
         Returns:
             Response from the server.
         """
-        datas = request.data
-        new_member = Customer.objects.create_user(**datas)
 
-        serializer = UserSerializer(new_member, many=False)
+        datas = request.data
+        new_customer = Customer.objects.create_user(**datas)
+
+        serializer = CustomerSerializer(new_customer, many=False)
 
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
@@ -116,11 +117,22 @@ class CustomAuthToken(ObtainAuthToken):
     def post(self, request: Request, *args: Any, **kwargs: Any):
 
         serializer = AuthTokenSerializer()
-        user = serializer.validate(attrs=request.data)
+
+        try:
+            user = serializer.validate(attrs=request.data)
+        except Exception:
+            return Response({"message": "Unable to authenticate with provided credentials", "status": 404}, status=404)
+
+        request.user = user
 
         token, created = Token.objects.get_or_create(user=user)
+
         return Response(
-            {"token": token.key, "username": user.username, "member_id": user.id}
+            {
+                "token": token.key,
+                "username": user.username,
+                "customer_id": user.id,
+            }
         )
 
 
