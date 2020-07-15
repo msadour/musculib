@@ -97,6 +97,7 @@ class ExercisesList extends Component {
         .catch(err => {
             alert('error');
         });
+        window.location.reload();
     }
 
     removeExercise (id) {
@@ -181,9 +182,13 @@ class ExercisesList extends Component {
                                     <tr>
                                         <th>
                                             {this.state.customer.favorite_exercice.find(exercise_favorite => exercise_favorite.id == exercise.id) ? (
-                                                <button onClick={(e) => this.removeExercise(exercise.id)}>Remove</button>
+                                                <button className="button" onClick={(e) => this.removeExercise(exercise.id)}>
+                                                    <label className="text">REMOVE</label>
+                                                </button>
                                             ) : (
-                                                <button onClick={(e) => this.addExercise(exercise.id)}>Add</button>
+                                                <button className="button" onClick={(e) => this.addExercise(exercise.id)}>
+                                                    <label className="text">ADD</label>
+                                                </button>
                                             )}
                                         </th>
                                     </tr>

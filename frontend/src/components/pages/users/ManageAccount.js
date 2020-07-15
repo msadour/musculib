@@ -100,7 +100,9 @@ export default class ManageAccount extends Component {
                         <tr>
                             <th>
                                 {this.state.customer.id !== undefined ? (
-                                    <button onClick={(e) => this.deleteAccount(e, this.state.customer.id)}>DELETE MY ACCOUNT</button>
+                                    <button className="button_delete" onClick={(e) => this.deleteAccount(e, this.state.customer.id)}>
+                                        <label className="text">DELETE MY ACCOUNT</label>
+                                    </button>
                                 ) : (
                                     <div></div>
                                 )}

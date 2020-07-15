@@ -144,8 +144,8 @@ class FormField extends Component {
                         onChange={e => this.onChange(e)}
                         placeholder={this.props.value}
                      />
-                     <button type="submit" value="Submit" className="update_button">
-                        Update
+                     <button type="submit" value="Submit" className="button_update">
+                        <label className="text">UPDATE</label>
                     </button>
                 </form>
                 <br />

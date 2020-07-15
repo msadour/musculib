@@ -141,9 +141,10 @@ class Subscription extends Component {
 
                         <tr>
                             <th>
-                              <button className="button" type="submit" className="button" >
-                                <label className="text_jl_button">SIGN UP</label>
+                              <button className="button" type="submit" >
+                                <label className="text">SIGN UP</label>
                               </button>
+                              <br /><br />
                             </th>
                         </tr>
                     </tbody>

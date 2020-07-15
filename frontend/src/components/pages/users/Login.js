@@ -88,8 +88,9 @@ class Login extends Component {
                         <tr>
                             <th>
                               <button className="button" type="submit" className="button" >
-                                <label className="text_jl_button">LOGIN</label>
+                                <label className="text">LOGIN</label>
                               </button>
+                              <br /><br />
                             </th>
                         </tr>
                     </tbody>
