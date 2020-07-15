@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
+import Menu from '../menu/Menu';
+
 class ExercisesList extends Component {
 
     constructor() {
@@ -140,10 +142,8 @@ class ExercisesList extends Component {
 
         return (
             <div>
+                <Menu />
                 <br />
-                <Link to='/'>
-                    <img className="img_go_home" src="../../../../../media/other/home.png" />
-                </Link>
 
                 {window.location.pathname.includes('all_exercises') == true ? (
                    <input

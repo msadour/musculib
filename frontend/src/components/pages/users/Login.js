@@ -53,7 +53,6 @@ class Login extends Component {
 
         return (
           <div>
-                <br /><br /><br />
                 <Menu />
                 <br /><br /><br />
               <div className="col-md-6 m-auto">

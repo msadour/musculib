@@ -40,7 +40,6 @@ export default class Home extends Component {
         return (
             <div>
                 <img src="../../../../media/other/cover.png" id="image_cover"/>
-                <br /><br /><br />
                 <Menu />
                 <br /><br /><br />
                 <p className="text title title_main"> Welcome to Musculib </p>

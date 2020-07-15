@@ -26,78 +26,52 @@ class Menu extends Component {
     render() {
         if (localStorage.getItem('token')) {
             return (
-                <div>
-                    <table className="table_main_menu">
-                        <tbody>
-                            <tr>
-                                <th>
-                                    <Link to='/'>
-                                        <p className="nav-link text_jl">Home</p>
-                                    </Link>
-                                </th>
+                <nav className="nav nav-pills nav-fill flex-column flex-sm-row element_summary header_summary menu">
 
-                                <th>
-                                    <Link to='/manage_account'>
-                                        <p className="nav-link text_jl">Manage your account</p>
-                                    </Link>
-                                </th>
+                    <Link to='/'>
+                        <img className=" nav-link nav-item img_go_home item_menu" src="../../../../../media/other/home.png" />
+                    </Link>
 
-                                <th>
-                                    <Link to='/your_favorite_exercises'>
-                                        <p className="nav-link text_jl">Your favorite exercises</p>
-                                    </Link>
-                                </th>
+                    <Link to='/manage_account'>
+                        <p className="nav-link nav-item item_menu">Manage your account</p>
+                    </Link>
 
-                                <th>
-                                    <Link to='/other_users'>
-                                        <p className="nav-link text_jl">Other users</p>
-                                    </Link>
-                                </th>
+                    <Link to='/your_favorite_exercises'>
+                        <p className="nav-link nav-item text item_menu">Your favorite exercises</p>
+                    </Link>
 
-                                <th>
-                                    <Link to='/'>
-                                        <p className="nav-link text_jl" onClick={this.logout}>Logout</p>
-                                    </Link>
-                                </th>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                     <Link to='/other_users'>
+                        <p className="nav-link nav-item text item_menu">They use Musculib</p>
+                    </Link>
+
+                    <Link to='/'>
+                        <p className="nav-link nav-item text item_menu item_logout" onClick={this.logout}>Logout</p>
+                    </Link>
+
+                </nav>
             )
 
         } else {
             return (
-                <div>
-                    <table className="table_main_menu">
-                        <tbody>
-                            <tr>
-                                <th>
-                                    <Link to='/'>
-                                        <p className="nav-link text_jl">Home</p>
-                                    </Link>
-                                </th>
+                <nav className="nav nav-pills nav-fill flex-column flex-sm-row element_summary header_summary">
 
-                                <th>
-                                    <Link to='/your_favorite_exercises'>
-                                        <p className="nav-link text_jl">Your favorite exercises</p>
-                                    </Link>
-                                </th>
+                    <Link to='/'>
+                        <img className=" nav-link nav-item img_go_home item_menu" src="../../../../../media/other/home.png" />
+                    </Link>
 
-                                <th>
-                                    <Link to='/subscription'>
-                                        <p className="nav-link text_jl">Subscription</p>
-                                    </Link>
-                                </th>
+                    <Link to='/other_users'>
+                        <p className="nav-link nav-item text item_menu">They use Musculib</p>
+                    </Link>
 
-                                <th>
-                                    <Link to='/login'>
-                                        <p className="nav-link text_jl">Login</p>
-                                    </Link>
-                                </th>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                    <Link to='/subscription'>
+                        <p className="nav-link nav-item text item_menu">Create your account</p>
+                    </Link>
+
+                     <Link to='/login'>
+                        <p className="nav-link nav-item text item_menu item_logout">Login</p>
+                    </Link>
+
+                </nav>
             )
 
         }

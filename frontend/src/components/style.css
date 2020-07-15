@@ -11,12 +11,28 @@
 }
 
 .img_go_home {
-    width: 4%;
-    margin-left: 2%;
+    width: 35%;
+    margin: 0 auto;
 }
 
 body {
     width: 100%;
+}
+
+.menu: {
+    padding-right: 5%;
+}
+
+.item_menu {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7%
+}
+
+.item_logout {
+    margin-top: 10%
 }
 
 
