@@ -41,7 +41,7 @@ class Login extends Component {
             localStorage.removeItem('username');
             localStorage.removeItem('customer_id');
             alert("Login or password is wrong.");
-            this.props.history.push("/authentication");
+            this.props.history.push("/login");
         });
     }
 
@@ -60,7 +60,7 @@ class Login extends Component {
                   <h2 className="text-center text_jl">Login</h2>
                   <form onSubmit={e => this.onSubmit(e)}>
                     <div className="form-group">
-                      <label className="text_jl">Username</label>
+                      <label className="text_jl">Email</label>
                       <input
                         type="text"
                         className="form-control"
