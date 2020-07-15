@@ -8,6 +8,7 @@ import ExerciseDetail from './pages/exercises/ExerciseDetail';
 import Login from './pages/users/Login';
 import Subscription from './pages/users/Subscription';
 import ManageAccount from './pages/users/ManageAccount';
+import CustomersList from './pages/users/CustomersList';
 
 import './style.css';
 
@@ -29,6 +30,7 @@ export default class App extends Component {
                             <Route exact path='/subscription' component={Subscription} />
                             <Route exact path='/manage_account' component={ManageAccount} />
                             <Route exact path='/your_favorite_exercises' component={ExercisesList} />
+                            <Route exact path='/other_users' component={CustomersList} />
                         </Switch>
                     </div>
                 </Fragment>

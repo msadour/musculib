@@ -86,7 +86,7 @@ body {
 
 /* ---------------------- Home ---------------------- */
 
-#summary {
+#summary, #list_customers {
     margin: 0 auto;
     background-color: white;
     width: 50%;

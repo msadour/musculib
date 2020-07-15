@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-import axios from 'axios';
+import Menu from '../menu/Menu';
 
 class ExerciseDetail extends Component {
 
@@ -38,11 +38,8 @@ class ExerciseDetail extends Component {
 
         return (
             <div>
-                <br />
-                <Link to='/'>
-                    <img className="img_go_home" src="../../../../../media/other/home.png" />
-                </Link>
-                <br />
+                <Menu />
+                <br /><br />
                 <table id="exercice_detail" className="table">
                     <tbody>
                         <tr>
