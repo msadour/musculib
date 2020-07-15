@@ -12,6 +12,8 @@ export default class ManageAccount extends Component {
         this.state = {
             customer: {}
         }
+
+        this.deleteAccount.bind(this)
     }
 
     componentDidMount() {
@@ -26,9 +28,27 @@ export default class ManageAccount extends Component {
         })
     }
 
+    deleteAccount(e, id) {
+        e.preventDefault();
+        if (id !== undefined) {
+            fetch("/api_musculib/customer/" + id + "/", {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" }
+            })
+            .then(() => {
+                console.log("deleted");
+            })
+                localStorage.removeItem('token');
+                localStorage.removeItem('username');
+                localStorage.removeItem('customer_id');
+                alert("Your account has been deleted");
+                this.props.history.push("/");
+                window.location.reload();
+        }
+    }
+
 
     render() {
-
         return (
             <div>
                 <Menu />
@@ -79,7 +99,11 @@ export default class ManageAccount extends Component {
 
                         <tr>
                             <th>
-                                <button>DELETE MY ACCOUNT</button>
+                                {this.state.customer.id !== undefined ? (
+                                    <button onClick={(e) => this.deleteAccount(e, this.state.customer.id)}>DELETE MY ACCOUNT</button>
+                                ) : (
+                                    <div></div>
+                                )}
                             </th>
                         </tr>
 
