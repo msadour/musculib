@@ -49,46 +49,52 @@ class Login extends Component {
 
     render() {
 
-        const{ username, password} = this.state
-
         return (
           <div>
-                <Menu />
-                <br /><br /><br />
-              <div className="col-md-6 m-auto">
-                <div className="card card-body mt-5">
-                  <h2 className="text-center text_jl">Login</h2>
-                  <form onSubmit={e => this.onSubmit(e)}>
-                    <div className="form-group">
-                      <label className="text_jl">Email</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="username"
-                        onChange={e => this.onChange(e)}
-                        value={this.state.username}
-                      />
-                    </div>
+            <Menu />
+            <br /><br /><br />
+            <form onSubmit={e => this.onSubmit(e)}>
+                <table className="table_authentication table">
+                    <thead>
+                        <tr className="element_summary header_summary">
+                            <th> <p className="text text_summary">LOGIN</p> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                  <label >Email : </label>
+                                  <input
+                                    type="text"
+                                    name="username"
+                                    style={{width: "100%"}}
+                                    onChange={e => this.onChange(e)}
+                                  />
+                            </th>
+                        </tr>
 
-                    <div className="form-group">
-                      <label className="text_jl">Password</label>
-                      <input
-                        type="password"
-                        className="form-control"
-                        name="password"
-                        onChange={e => this.onChange(e)}
-                        value={this.state.password}
-                      />
-                    </div>
+                        <tr>
+                            <th>
+                                  <label>Password : </label>
+                                  <input
+                                    type="password"
+                                    name="password"
+                                    style={{width: "100%"}}
+                                    onChange={e => this.onChange(e)}
+                                  />
+                            </th>
+                        </tr>
 
-                    <div className="form-group">
-                      <button className="button" type="submit" className="button" >
-                        <label className="text_jl_button">LOGIN</label>
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+                        <tr>
+                            <th>
+                              <button className="button" type="submit" className="button" >
+                                <label className="text_jl_button">LOGIN</label>
+                              </button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
           </div>
         )
     }

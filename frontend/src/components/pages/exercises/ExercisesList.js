@@ -188,9 +188,8 @@ class ExercisesList extends Component {
                                         </th>
                                     </tr>
                                 ) : (
-                                    <tr> <th> </th></tr>
+                                    <tr> <th></th></tr>
                                 )}
-
                             </tbody>
                         </table>
                         <br />

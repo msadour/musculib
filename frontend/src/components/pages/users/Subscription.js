@@ -52,58 +52,75 @@ class Subscription extends Component {
           <div>
             <Menu />
             <br /><br /><br />
-              <div className="col-md-6 m-auto">
-                <div className="card card-body mt-5">
-                  <h2 className="text-center text_jl">Create your account</h2>
-                  <form onSubmit={e => this.onSubmit(e)}>
-                    <div className="form-group">
-                      <label className="text_jl">Email</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="username"
-                        onChange={e => this.onChange(e)}
-                      />
-                    </div>
+            <form onSubmit={e => this.onSubmit(e)}>
+                <table className="table_authentication table">
+                    <thead>
+                        <tr className="element_summary header_summary">
+                            <th> <p className="text text_summary">CREATE YOUR ACCOUNT</p> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                  <label >Email : </label>
+                                  <input
+                                    type="text"
+                                    name="username"
+                                    style={{width: "100%"}}
+                                    onChange={e => this.onChange(e)}
+                                  />
+                            </th>
+                        </tr>
 
-                    <div className="form-group">
-                      <label className="text_jl">Password</label>
-                      <input
-                        type="password"
-                        className="form-control"
-                        name="password"
-                        onChange={e => this.onChange(e)}
-                      />
-                    </div>
+                        <tr>
+                            <th>
+                              <div>
+                                  <label>Password : </label>
+                                  <input
+                                    type="password"
+                                    name="password"
+                                    style={{width: "100%"}}
+                                    onChange={e => this.onChange(e)}
+                                  />
+                              </div>
+                            </th>
+                        </tr>
 
-                    <div className="form-group">
-                      <label className="text_jl">First name</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="first_name"
-                        onChange={e => this.onChange(e)}
-                      />
-                    </div>
+                        <tr>
+                            <th>
+                              <label >First name</label>
+                              <input
+                                type="text"
+                                name="first_name"
+                                style={{width: "100%"}}
+                                onChange={e => this.onChange(e)}
+                              />
+                            </th>
+                        </tr>
 
-                    <div className="form-group">
-                      <label className="text_jl">Last name</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="last_name"
-                        onChange={e => this.onChange(e)}
-                      />
-                    </div>
 
-                    <div className="form-group">
-                      <button className="button" type="submit" className="button" >
-                        <label className="text_jl_button">CREATE YOUR ACCOUNT</label>
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+                        <tr>
+                            <th>
+                              <label >Last name</label>
+                              <input
+                                type="text"
+                                name="last_name"
+                                style={{width: "100%"}}
+                                onChange={e => this.onChange(e)}
+                              />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                              <button className="button" type="submit" className="button" >
+                                <label className="text_jl_button">SIGN UP</label>
+                              </button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
           </div>
         )
     }

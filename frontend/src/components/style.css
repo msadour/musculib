@@ -5,8 +5,12 @@
     margin: 0 auto;
 }
 
+.table_authentication, .table_account {
+    width:40%;
+}
+
 .header_summary {
-    background-color: black;
+    background-color: #05121e;
     line-height: 255%;
 }
 
@@ -25,18 +29,12 @@ body {
 
 .item_menu {
     color: white;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.4em;
     font-weight: bold;
-    padding-top: 7%
+    padding-bottom: 2%;
+    vertical-align: middle;
 }
 
-.item_logout {
-    margin-top: 10%
-}
-
-
-/* ---------------------- Text ---------------------- */
 
 
 .text {
@@ -49,17 +47,17 @@ body {
 }
 
 .title_main {
-    color: white;
+    color: #05121e;
     font-size: 3em;
 }
 
 .title_second {
-    color: white;
+    color: #05121e;
     font-size: 2.3em;
 }
 
 .title_third {
-    color: black;
+    color: #05121e;
     font-size: 1.5em;
 }
 
@@ -72,6 +70,7 @@ body {
 
 .paragraph {
     font-size: 1.2em;
+    color: #05121e;
 }
 
 .link_muscles {
@@ -80,7 +79,7 @@ body {
 
 #intro {
     font-size: 1.2em;
-    color: white;
+    color: #05121e;
     text-align: center;
 }
 
@@ -98,6 +97,14 @@ body {
 
 .element_summary {
     line-height: 255%;
+}
+
+.width_field_update_form {
+    width: 100%;
+}
+
+.update_button {
+    margin-left: 5%
 }
 
 /* ---------------------- Results ---------------------- */

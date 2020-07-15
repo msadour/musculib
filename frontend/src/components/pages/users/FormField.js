@@ -100,28 +100,19 @@ class FormField extends Component {
     render() {
 
         return (
-            <div>
+            <div >
                 <form onSubmit={e => this.onSubmit(e)}>
-                  <table border="0" style={{width: '50%'}} className="page_content">
-                    <tbody>
-                        <tr>
-                            <th style={{width: '30%'}}> <label className="text_jl">{this.props.label}: </label> </th>
-                            <th>
-                                <input
-                                    type='text'
-                                    name="new_value"
-                                    style={{width: '100%'}}
-                                    onChange={e => this.onChange(e)}
-                                    placeholder={this.props.value}
-                                 />
-                            </th>
-                            <th> <button className="button" type="submit" value="Submit">
-                                <label className="text_jl_button">Update</label>
-                             </button> </th>
-                        </tr>
-
-                    </tbody>
-                  </table>
+                    <label>{this.props.label}: </label>
+                    <input
+                        type='text'
+                        name="new_value"
+                        style={{width: "70%"}}
+                        onChange={e => this.onChange(e)}
+                        placeholder={this.props.value}
+                     />
+                     <button type="submit" value="Submit" className="update_button">
+                        Update
+                    </button>
                 </form>
                 <br />
             </div>

@@ -33,7 +33,7 @@ class Menu extends Component {
                     </Link>
 
                     <Link to='/manage_account'>
-                        <p className="nav-link nav-item text item_menu">Manage your account</p>
+                        <p className="nav-link nav-item text item_menu">Your account</p>
                     </Link>
 
                     <Link to='/your_favorite_exercises'>
@@ -41,11 +41,11 @@ class Menu extends Component {
                     </Link>
 
                      <Link to='/other_users'>
-                        <p className="nav-link nav-item text item_menu">They use Musculib</p>
+                        <p className="nav-link nav-item text item_menu">Users</p>
                     </Link>
 
                     <Link to='/'>
-                        <p className="nav-link nav-item text item_menu item_logout" onClick={this.logout}>Logout</p>
+                        <p className="nav-link nav-item text item_menu item_authentication" onClick={this.logout}>Logout</p>
                     </Link>
 
                 </nav>
@@ -53,24 +53,42 @@ class Menu extends Component {
 
         } else {
             return (
-                <nav className="nav nav-pills nav-fill flex-column flex-sm-row element_summary header_summary">
+                <nav className="nav nav-pills nav-fill flex-column flex-sm-row element_summary header_summary menu">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <Link to='/'>
+                                        <img className=" nav-link nav-item img_go_home item_menu" src="../../../../../media/other/home.png" />
+                                    </Link>
+                                </th>
 
-                    <Link to='/'>
-                        <img className=" nav-link nav-item img_go_home item_menu" src="../../../../../media/other/home.png" />
-                    </Link>
 
-                    <Link to='/other_users'>
-                        <p className="nav-link nav-item text item_menu">They use Musculib</p>
-                    </Link>
 
-                    <Link to='/subscription'>
-                        <p className="nav-link nav-item text item_menu">Create your account</p>
-                    </Link>
+                                <th>
+                                    <Link to='/other_users'>
+                                        <p className="nav-link nav-item text item_menu">Users</p>
+                                    </Link>
+                                </th>
 
-                     <Link to='/login'>
-                        <p className="nav-link nav-item text item_menu item_logout">Login</p>
-                    </Link>
 
+
+                                <th>
+                                    <Link to='/subscription'>
+                                        <p className="nav-link nav-item text item_menu">Subscription</p>
+                                    </Link>
+                                </th>
+
+
+
+                                <th>
+                                    <Link to='/login'>
+                                        <p className="nav-link nav-item text item_menu item_authentication">Login</p>
+                                    </Link>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
                 </nav>
             )
 

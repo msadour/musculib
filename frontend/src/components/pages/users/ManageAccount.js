@@ -31,41 +31,41 @@ export default class ManageAccount extends Component {
         return (
             <div>
                 <Menu />
-                <br />
-                      <table className="page_content" style={{backgroundColor: "white", width:"70%"}}>
-                        <tbody>
+                <br /><br /><br />
+                  <table className="table_account table">
+                    <thead>
+                        <tr className="element_summary header_summary">
+                            <th> <p className="text text_summary">Hello {this.state.customer.first_name}</p> </th>
+                        </tr>
+                    </thead>
 
-                            <tr>
-                                <th><br /></th>
-                            </tr>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <FormField type_input="text" field="first_name" label="First name" value={this.state.customer.first_name} />
+                            </th>
+                        </tr>
 
-                            <tr>
-                                <th><center><h2 className="text_jl">Hello {this.state.customer.first_name}</h2></center></th>
-                            </tr>
+                        <tr>
+                            <th>
+                                <FormField type_input="text" field="last_name" label="Last name" value={this.state.customer.last_name} />
+                            </th>
+                        </tr>
 
-                            <tr>
-                                <th><br /></th>
-                            </tr>
+                        <tr>
+                            <th>
+                                <FormField type_input="text" field="email" label="Email" value={this.state.customer.email} />
+                            </th>
+                        </tr>
 
+                        <tr>
+                            <th>
+                                <FormField type_input="text" field="password" label="Password" value="" />
+                            </th>
+                        </tr>
 
-                            <tr>
-                                <th><FormField type_input="text" field="first_name" label="First name" value={this.state.customer.first_name} /></th>
-                            </tr>
-
-                            <tr>
-                                <th><FormField type_input="text" field="last_name" label="Last name" value={this.state.customer.last_name} /></th>
-                            </tr>
-
-                            <tr>
-                                <th><FormField type_input="text" field="email" label="Email" value={this.state.customer.email} /></th>
-                            </tr>
-
-                            <tr>
-                                <th><FormField type_input="text" field="password" label="Password" value="" /></th>
-                            </tr>
-
-                        </tbody>
-                      </table>
+                    </tbody>
+                  </table>
                 <br /><br /><br /><br /><br />
             </div>
         )
