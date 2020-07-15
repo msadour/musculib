@@ -12,6 +12,8 @@ class Subscription extends Component {
             password: "",
             first_name: "",
             last_name: "",
+            country: "",
+            city: "",
 
         }
         this.onChange.bind(this);
@@ -29,6 +31,8 @@ class Subscription extends Component {
                 "password": this.state.password,
                 "first_name": this.state.first_name,
                 "last_name": this.state.last_name,
+                "country": this.state.country,
+                "city": this.state.city,
                 }
             )
         })
@@ -105,6 +109,30 @@ class Subscription extends Component {
                               <input
                                 type="text"
                                 name="last_name"
+                                style={{width: "100%"}}
+                                onChange={e => this.onChange(e)}
+                              />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                              <label >Country</label>
+                              <input
+                                type="text"
+                                name="country"
+                                style={{width: "100%"}}
+                                onChange={e => this.onChange(e)}
+                              />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                              <label >City</label>
+                              <input
+                                type="text"
+                                name="city"
                                 style={{width: "100%"}}
                                 onChange={e => this.onChange(e)}
                               />

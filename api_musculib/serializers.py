@@ -71,6 +71,8 @@ class CustomerSerializer(serializers.ModelSerializer):
             "username",
             "first_name",
             "last_name",
+            "country",
+            "city",
             "favorite_exercice",
         ]
 

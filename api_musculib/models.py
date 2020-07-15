@@ -101,6 +101,8 @@ class Customer(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(max_length=255, unique=True)
     first_name = models.CharField(max_length=255, blank=True)
     last_name = models.CharField(max_length=255, blank=True)
+    country = models.CharField(max_length=255, blank=True)
+    city = models.CharField(max_length=255, blank=True)
     favorite_exercice = models.ManyToManyField(Exercice, blank=True)
 
     USERNAME_FIELD = "username"

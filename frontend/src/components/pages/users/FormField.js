@@ -70,6 +70,40 @@ class FormField extends Component {
                 });
             break;
 
+            case "country":
+                fetch('/api_musculib/customer/' + customer_id + '/', {
+                    method: "PATCH",
+                    body: JSON.stringify({ "country" : this.state.new_value }),
+                    headers: { 'Authorization': 'Token ' + localStorage.getItem('token'),
+                             "Content-Type": "application/json"
+                    },
+                })
+                .then(response => response.json())
+                .then((data) => {
+                    window.location.reload();
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+            break;
+
+            case "city":
+                fetch('/api_musculib/customer/' + customer_id + '/', {
+                    method: "PATCH",
+                    body: JSON.stringify({ "city" : this.state.new_value }),
+                    headers: { 'Authorization': 'Token ' + localStorage.getItem('token'),
+                             "Content-Type": "application/json"
+                    },
+                })
+                .then(response => response.json())
+                .then((data) => {
+                    window.location.reload();
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+            break;
+
             case "password":
                 fetch('/api_musculib/customer/' + customer_id + '/', {
                     method: "PATCH",

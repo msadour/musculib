@@ -26,7 +26,8 @@ export default class ManageAccount extends Component {
         })
     }
 
-        render() {
+
+    render() {
 
         return (
             <div>
@@ -61,6 +62,24 @@ export default class ManageAccount extends Component {
                         <tr>
                             <th>
                                 <FormField type_input="text" field="password" label="Password" value="" />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <FormField type_input="text" field="country" label="Country" value={this.state.customer.country} />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <FormField type_input="text" field="city" label="City" value={this.state.customer.city} />
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <button>DELETE MY ACCOUNT</button>
                             </th>
                         </tr>
 

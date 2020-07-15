@@ -28,7 +28,6 @@ SECRET_KEY = "!crg(gif6w36!n&93@q0h2+t5oc*)x%$6m*9qx!v!=#l4w1a=0"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = ["*"]
 
