@@ -118,7 +118,7 @@ class CustomerViewSet(viewsets.ModelViewSet):
             request: request sent by the client.
             pk: id of the object to be updated.
             args: Variable length argument list.
-            options: Arbitrary keyword arguments.
+            kwargs: Arbitrary keyword arguments.
 
         Returns:
             Response from the server.
@@ -131,6 +131,12 @@ class CustomerViewSet(viewsets.ModelViewSet):
             elif attr == "email":
                 customer.email = datas["email"]
                 customer.username = datas["email"]
+            elif attr == "add_exercise":
+                exercise = Exercice.objects.get(id=value)
+                customer.favorite_exercice.add(exercise)
+            elif attr == "remove_exercise":
+                exercise = Exercice.objects.get(id=value)
+                customer.favorite_exercice.remove(exercise)
             else:
                 setattr(customer, attr, value)
         customer.save()

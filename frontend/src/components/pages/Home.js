@@ -62,7 +62,7 @@ export default class Home extends Component {
 
                             <tr className="element_summary" >
                                 <th> <p className="text paragraph"> All exercises </p> </th>
-                                <th > <a className="text paragraph" href={"/exercises"} >Click here</a></th>
+                                <th > <a className="text paragraph" href={"/all_exercises"} >Click here</a></th>
                             </tr>
 
                         {this.state.muscles.map((muscle) => (

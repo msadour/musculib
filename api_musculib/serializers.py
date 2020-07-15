@@ -57,13 +57,22 @@ class CustomerSerializer(serializers.ModelSerializer):
     Class UserSerializer
     """
 
+    favorite_exercice = ExerciceSerializer(many=True)
+
     class Meta:
         """
         Class Meta
         """
 
         model = Customer
-        fields = "__all__"
+        fields = [
+            "id",
+            "email",
+            "username",
+            "first_name",
+            "last_name",
+            "favorite_exercice",
+        ]
 
 
 class MuscleSerializer(serializers.ModelSerializer):

@@ -30,6 +30,7 @@ export default class ManageAccount extends Component {
 
         return (
             <div>
+                <Menu />
                 <br />
                       <table className="page_content" style={{backgroundColor: "white", width:"70%"}}>
                         <tbody>
