@@ -46,7 +46,7 @@ export default class CustomersList extends Component {
                                 ) : (
                                     <th>
                                         <p className="text paragraph">
-                                        {customer.first_name} {customer.last_name} <br />
+                                        {customer.first_name.charAt(0)}. {customer.last_name} <br />
                                         live in {customer.city}, {customer.country}
 
                                         </p>
