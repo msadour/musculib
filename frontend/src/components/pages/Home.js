@@ -42,8 +42,8 @@ export default class Home extends Component {
                 <img src="../../../../media/other/cover.png" id="image_cover"/>
                 <Menu />
                 <br /><br /><br />
-                <p className="text title title_main"> Welcome to Musculib </p>
-                <hr style={{width:"80%", backgroundColor:"white"}} />
+                <p className="text title title_main"> WELCOME TO MUSCULIB </p>
+                <hr style={{width:"80%", backgroundColor:"#ddecf8"}} />
 
                 <br /><br />
 

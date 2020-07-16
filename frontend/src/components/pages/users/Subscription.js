@@ -39,11 +39,9 @@ class Subscription extends Component {
         .then(response => response.json())
         .then((data) => {
             alert("Your account have been created.")
-
         })
         .catch(err => {
-            console.log(err)
-            alert("Error.");
+            alert("This email is already used");
             this.props.history.push("/subscription");
         });
     }

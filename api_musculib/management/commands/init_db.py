@@ -20,7 +20,6 @@ class Command(BaseCommand):
         """
         Execute the command that create book(s).
         """
-
         datas_files = BASE_DIR + "/musculib/datas/exercices.json"
 
         Declination.objects.all().delete()
