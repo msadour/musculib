@@ -38,11 +38,11 @@ class Menu extends Component {
                     </Link>
 
                     <Link to='/manage_account'>
-                        <p className="nav-link nav-item text item_menu">Your account</p>
+                        <p className="nav-link nav-item text item_menu">Account</p>
                     </Link>
 
                     <Link to='/your_favorite_exercises' onClick={this.updateContentFavoriteExercise}>
-                        <p className="nav-link nav-item text item_menu">Your favorite exercises</p>
+                        <p className="nav-link nav-item text item_menu">Favorite exercises</p>
                     </Link>
 
                      <Link to='/other_users'>
