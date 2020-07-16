@@ -24,6 +24,18 @@ export default class CustomersList extends Component {
         })
     }
 
+    deleteAccount(e, id) {
+        e.preventDefault();
+        fetch("/api_musculib/customer/" + id + "/", {
+            method: "DELETE",
+            headers: { "Content-Type": "application/json" }
+        })
+        .then(() => {
+           alert("User deleted");
+           window.location.reload();
+        })
+    }
+
     render() {
         return (
             <div>
@@ -47,7 +59,11 @@ export default class CustomersList extends Component {
                                     <th>
                                         <p className="text paragraph">
                                         {customer.first_name.charAt(0)}. {customer.last_name} <br />
-                                        live in {customer.city}, {customer.country}
+                                        live in {customer.city}, {customer.country} <br />
+
+                                        {localStorage.getItem('username') == "sadour.mehdi@gmail.com" ? (
+                                            <button className="button_delete" onClick={(e) => this.deleteAccount(e, customer.id)}>DELETE</button>
+                                        ) : (<div></div>)}
 
                                         </p>
                                     </th>
