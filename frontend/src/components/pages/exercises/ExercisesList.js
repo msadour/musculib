@@ -196,7 +196,7 @@ class ExercisesList extends Component {
                                 )}
                             </tbody>
                         </table>
-                        <br />
+                        <br /><br />
                     </div>
 
                 ))}

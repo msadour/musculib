@@ -89,7 +89,7 @@ export default class Home extends Component {
                         ))}
                     </tbody>
                 </table>
-                 <br />
+                 <br /><br />
             </div>
         )
     }

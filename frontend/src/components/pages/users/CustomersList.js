@@ -85,6 +85,7 @@ export default class CustomersList extends Component {
                         ))}
                     </tbody>
                 </table>
+                <br /><br />
             </div>
         )
 
