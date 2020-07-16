@@ -10,7 +10,15 @@ import Subscription from './pages/users/Subscription';
 import ManageAccount from './pages/users/ManageAccount';
 import CustomersList from './pages/users/CustomersList';
 
-import './style.css';
+//import './style.css';
+import './style/button.css';
+import './style/exercises.css';
+import './style/general.css';
+import './style/home.css';
+import './style/menu.css';
+import './style/table.css';
+import './style/text.css';
+import './style/users.css';
 
 export default class App extends Component {
     render() {

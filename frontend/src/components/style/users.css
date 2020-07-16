@@ -1,0 +1,25 @@
+#list_customers {
+    margin: 0 auto;
+    background-color: white;
+    width: 50%;
+}
+
+#table_signin {
+    width: 30%
+}
+
+#table_signup {
+    width: 30%
+}
+
+.table_authentication, .table_account {
+    width:40%;
+}
+
+.update_button {
+    margin-left: 5%
+}
+
+.button_add_favorite {
+    margin-left: 35%;
+}

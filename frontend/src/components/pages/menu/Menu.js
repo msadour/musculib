@@ -23,6 +23,11 @@ class Menu extends Component {
         });
     }
 
+    updateContentFavoriteExercise = e => {
+        this.props.history.push('/your_favorite_exercises');
+        window.location.reload()
+    }
+
     render() {
         if (localStorage.getItem('token')) {
             return (
@@ -36,7 +41,7 @@ class Menu extends Component {
                         <p className="nav-link nav-item text item_menu">Your account</p>
                     </Link>
 
-                    <Link to='/your_favorite_exercises'>
+                    <Link to='/your_favorite_exercises' onClick={this.updateContentFavoriteExercise}>
                         <p className="nav-link nav-item text item_menu">Your favorite exercises</p>
                     </Link>
 

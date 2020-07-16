@@ -1,0 +1,17 @@
+.img_go_home {
+    width: 35%;
+    margin: 0 auto;
+}
+
+
+.menu: {
+    padding-right: 5%;
+}
+
+.item_menu {
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: 2%;
+    vertical-align: middle;
+}

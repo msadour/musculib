@@ -1,0 +1,35 @@
+.text {
+    font-family: 'Bebas Neue';
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.title_main {
+    color: #05121e;
+    font-size: 3em;
+}
+
+.title_second {
+    color: #05121e;
+    font-size: 2.3em;
+}
+
+.title_third {
+    color: #05121e;
+    font-size: 1.5em;
+}
+
+.text_summary {
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-size: 1.2em;
+    color: #05121e;
+}

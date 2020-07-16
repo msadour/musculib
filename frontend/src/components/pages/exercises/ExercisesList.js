@@ -65,7 +65,7 @@ class ExercisesList extends Component {
             fetch(url)
             .then(response => response.json())
             .then((data) => {
-                this.setState({ exercises: data['favorite_exercice']})
+                this.setState({ exercises: data['favorite_exercice']});
             })
             .catch((err) => {
                 console.log(err)
@@ -76,7 +76,7 @@ class ExercisesList extends Component {
             fetch(url)
             .then(response => response.json())
             .then((data) => {
-                this.setState({ exercises: data})
+                this.setState({ exercises: data});
             })
             .catch((err) => {
                 console.log(err)
@@ -95,9 +95,9 @@ class ExercisesList extends Component {
             this.setState({exercises: data});
         })
         .catch(err => {
+            console.log(err)
             alert('error');
         });
-        window.location.reload();
     }
 
     removeExercise (id) {
@@ -135,6 +135,7 @@ class ExercisesList extends Component {
     }
 
     render() {
+
         if (this.state.exercises == undefined) {
             return (
                 <div>Exercies loading...</div>
@@ -165,7 +166,6 @@ class ExercisesList extends Component {
                                 <tr className="header_summary">
                                     <th> <p className="text text_summary">{exercise.name}</p> </th>
                                 </tr>
-
                                 <tr>
                                     <th>
                                         <Link to={"/exercises_detail/" + exercise.id}>
@@ -177,7 +177,6 @@ class ExercisesList extends Component {
                                         <br /><br />
                                     </th>
                                 </tr>
-
                                 {this.state.customer !== null ? (
                                     <tr>
                                         <th>
@@ -193,7 +192,7 @@ class ExercisesList extends Component {
                                         </th>
                                     </tr>
                                 ) : (
-                                    <tr> <th></th></tr>
+                                    <tr><th></th></tr>
                                 )}
                             </tbody>
                         </table>

@@ -1,0 +1,14 @@
+.table {
+    background-color: white;
+    margin: 0 auto;
+}
+
+
+.header_summary {
+    background-color: #05121e;
+    line-height: 255%;
+}
+
+.element_summary {
+    line-height: 255%;
+}
