@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { useState, useEffect } from 'react';
+import Loader from 'react-loader-spinner'
 
 import Menu from './menu/Menu';
 
@@ -37,11 +38,11 @@ export default class Home extends Component {
     }
 
     render() {
+
         return (
             <div>
-                <img src="../../../../media/other/cover.png" id="image_cover"/>
                 <Menu />
-                <br /><br /><br />
+                <br /><br />
                 <p className="text title title_main"> WELCOME TO MUSCULIB </p>
                 <hr style={{width:"80%", backgroundColor:"#ddecf8"}} />
 
@@ -50,46 +51,25 @@ export default class Home extends Component {
                 <div id="intro">
                     <p className="text" id="intro">Musculib is a website that provides almost 100 fitness exercises through an internal API.</p>
                 </div>
-                <br />
+                <br /><br /><br />
 
-                <table id="summary" className="table" border="1">
-                    <tbody>
-                        <tr className="element_summary header_summary">
-                            <th> <p className="text text_summary">MUSCLE</p> </th>
-                            <th > <p className="text text_summary">URL</p></th>
-                        </tr>
+                <table id="home_image">
+                    <tr>
+                        <th>
+                            <img src="../../../../media/barbell/squat.png" />
+                        </th>
 
-                            <tr className="element_summary" >
-                                <th> <p className="text paragraph"> All exercises </p> </th>
-                                <th > <a className="text paragraph" href={"/all_exercises"} >Click here</a></th>
-                            </tr>
+                        <th>
+                            <img src="../../../../media/barbell/close_bench_press.png" />
+                        </th>
 
-                        {this.state.muscles.map((muscle) => (
-                            <tr className="element_summary" key={muscle.id}>
-                                <th> <p className="text paragraph"> Exercises that work mainly {muscle.name} </p> </th>
-                                <th > <a className="text paragraph" href={"/exercises/muscle/" + muscle.id} >Click here</a></th>
-                            </tr>
-                        ))}
-                    </tbody>
+                        <th>
+                            <img src="../../../../media/bodyweight/pull_up.png" />
+                        </th>
+                    </tr>
                 </table>
-                <br /><br />
 
-                <table id="summary" className="table" border="1">
-                    <tbody>
-                        <tr className="element_summary header_summary">
-                            <th> <p className="text text_summary">DECLINATION</p> </th>
-                            <th> <p className="text text_summary">URL</p></th>
-                        </tr>
-
-                        {this.state.declinations.map((declination) => (
-                            <tr key={declination.id}>
-                                <th> <p className="text paragraph"> Exercises that need {declination.name} </p> </th>
-                                <th > <a className="text paragraph" href={"/exercises/declination/" + declination.id} >Click here</a></th>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-                 <br /><br />
+                        <br /> <br /><br /> <br /><br /> <br />
             </div>
         )
     }

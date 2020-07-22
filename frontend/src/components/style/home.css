@@ -8,8 +8,20 @@
     width: 100%;
 }
 
-#summary {
+#home_image {
+    margin-left: 10%;
+}
+
+.tables_home {
+    columns: 2;
+    width: 60%;
+    margin-left: 17%;
+    text-align: center;
+    list-style: none;
+}
+
+.summary {
     margin: 0 auto;
     background-color: white;
-    width: 50%;
+    width: 30%;
 }

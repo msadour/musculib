@@ -1,17 +1,51 @@
 .img_go_home {
     width: 35%;
     margin: 0 auto;
+    margin-bottom: 5%
 }
 
 
-.menu: {
+.menu {
     padding-right: 5%;
+    background-color: #05121e;
 }
 
 .item_menu {
     color: #ddecf8;
     font-size: 1.4em;
     font-weight: bold;
-    padding-bottom: 2%;
+    padding-bottom: 0%;
     vertical-align: middle;
 }
+
+.dropbtn {
+    width: 45%;
+    margin-left:25%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 150%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: -10%
+}
+
+.dropdown-content a {
+  color: #05121e;
+  background-color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  left: 0;
+}
+
+.dropdown-content a:hover {background-color: #6893b7;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

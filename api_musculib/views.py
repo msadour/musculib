@@ -30,7 +30,7 @@ from .serializers import (
     DeclinationSerializer,
     AuthTokenSerializer,
 )
-from .permissions import ActionsAllowed
+from .permissions import ActionsAllowed  # , ActionsUser
 
 
 class ExerciseViewSet(viewsets.ModelViewSet):
@@ -67,7 +67,7 @@ class MuscleViewSet(viewsets.ModelViewSet):
     Class MuscleViewSet
     """
 
-    queryset = Muscle.objects.all()
+    queryset = Muscle.objects.all().order_by("name")
     serializer_class = MuscleSerializer
     permission_classes = (ActionsAllowed,)
 
@@ -77,7 +77,7 @@ class DeclinationViewSet(viewsets.ModelViewSet):
     Class ExerciceViewSet
     """
 
-    queryset = Declination.objects.all()
+    queryset = Declination.objects.all().order_by("name")
     serializer_class = DeclinationSerializer
     permission_classes = (ActionsAllowed,)
 
@@ -156,18 +156,20 @@ class CustomAuthToken(ObtainAuthToken):
         try:
             user = serializer.validate(attrs=request.data)
         except Exception:
-            return Response({"message": "Unable to authenticate with provided credentials", "status": 404}, status=404)
+            return Response(
+                {
+                    "message": "Unable to authenticate with provided credentials",
+                    "status": 404,
+                },
+                status=404,
+            )
 
         request.user = user
 
         token, created = Token.objects.get_or_create(user=user)
 
         return Response(
-            {
-                "token": token.key,
-                "username": user.username,
-                "customer_id": user.id,
-            }
+            {"token": token.key, "username": user.username, "customer_id": user.id}
         )
 
 

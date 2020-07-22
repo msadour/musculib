@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import Loader from 'react-loader-spinner';
 
 import Menu from '../menu/Menu';
 
@@ -136,9 +137,10 @@ class ExercisesList extends Component {
 
     render() {
 
-        if (this.state.exercises == undefined) {
+        if (this.state.exercises.length == 0) {
             return (
-                <div>Exercies loading...</div>
+                <div>
+                </div>
             )
         }
 

@@ -2,3 +2,12 @@ body {
     width: 100%;
     background-color: #6893b7
 }
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #05121e;
+  text-align: center;
+}

@@ -58,8 +58,9 @@ export default class CustomersList extends Component {
                                 ) : (
                                     <th>
                                         <p className="text paragraph">
-                                        {customer.first_name.charAt(0)}. {customer.last_name} <br />
-                                        live in {customer.city}, {customer.country} <br />
+                                        {customer.first_name} {customer.last_name.charAt(0)}. <br />
+
+                                        Live in {customer.city}, {customer.country} <br />
 
                                         {localStorage.getItem('username') == "sadour.mehdi@gmail.com" ? (
                                             <button className="button_delete" onClick={(e) => this.deleteAccount(e, customer.id)}>DELETE</button>
