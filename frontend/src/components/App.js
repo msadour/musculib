@@ -9,7 +9,8 @@ import Login from './pages/users/Login';
 import Subscription from './pages/users/Subscription';
 import ManageAccount from './pages/users/ManageAccount';
 import CustomersList from './pages/users/CustomersList';
-import Footer from "./layout/Footer"
+import Footer from "./layout/Footer";
+import Menu from './pages/menu/Menu';
 
 import './style/button.css';
 import './style/exercises.css';
@@ -25,6 +26,7 @@ export default class App extends Component {
         return (
           <div>
             <Router>
+                <Menu />
                 <Fragment>
                     <div>
                         <Switch>

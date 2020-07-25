@@ -41,7 +41,6 @@ export default class Home extends Component {
 
         return (
             <div>
-                <Menu />
                 <br /><br />
                 <p className="text title title_main"> WELCOME TO MUSCULIB </p>
                 <hr style={{width:"80%", backgroundColor:"#ddecf8"}} />
@@ -53,18 +52,24 @@ export default class Home extends Component {
                 </div>
                 <br /><br /><br />
 
-                <table id="home_image">
+                <table style={{margin: "0 auto"}}>
                     <tr>
                         <th>
-                            <img src="../../../../media/barbell/squat.png" />
+                            <img style={{width: "100%"}} src="../../../../media/barbell/squat.png" />
                         </th>
 
                         <th>
-                            <img src="../../../../media/barbell/close_bench_press.png" />
+                            <img style={{width: "100%"}} src="../../../../media/barbell/close_bench_press.png" />
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <img style={{width: "100%"}} src="../../../../media/dumbbell/shoulders_press.png" />
                         </th>
 
                         <th>
-                            <img src="../../../../media/bodyweight/pull_up.png" />
+                            <img style={{width: "100%"}} src="../../../../media/bodyweight/pull_up.png" />
                         </th>
                     </tr>
                 </table>

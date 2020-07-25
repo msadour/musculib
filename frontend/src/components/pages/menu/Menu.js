@@ -73,6 +73,12 @@ class Menu extends Component {
     }
 
     render() {
+        if(this.state.muscles.length == 0 | this.state.declinations.length == 0){
+            return (
+                <div></div>
+            )
+        }
+
         if (localStorage.getItem('token')) {
             return (
                <nav className="nav nav-pills nav-fill flex-column flex-sm-row element_summary menu">
@@ -89,7 +95,7 @@ class Menu extends Component {
                                     <div className="dropdown item_menu">
                                         <p className="nav-link nav-item text">Exercises by muscle</p>
                                         <div className="dropdown-content">
-                                            <ul >
+                                            <ul style={{listStyle: "none"}}>
                                                   <li>
                                                       <Link
                                                         to='/all_exercises'
@@ -113,7 +119,7 @@ class Menu extends Component {
                                     <div className="dropdown item_menu">
                                         <p className="nav-link nav-item text">Exercises by declination</p>
                                         <div className="dropdown-content">
-                                            <ul >
+                                            <ul style={{listStyle: "none"}}>
                                                   <li>
                                                       <Link
                                                         to='/all_exercises'
@@ -186,7 +192,7 @@ class Menu extends Component {
                                     <div className="dropdown item_menu">
                                         <p className="nav-link nav-item text">Exercises by muscle</p>
                                         <div className="dropdown-content">
-                                            <ul >
+                                            <ul style={{listStyle: "none"}}>
                                                   <li>
                                                       <Link
                                                         to='/all_exercises'
@@ -210,7 +216,7 @@ class Menu extends Component {
                                     <div className="dropdown item_menu">
                                         <p className="nav-link nav-item text">Exercises by declination</p>
                                         <div className="dropdown-content">
-                                            <ul >
+                                            <ul style={{listStyle: "none"}}>
                                                   <li>
                                                       <Link
                                                         to='/all_exercises'

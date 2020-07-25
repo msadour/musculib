@@ -146,7 +146,6 @@ class ExercisesList extends Component {
 
         return (
             <div>
-                <Menu />
                 <br />
 
                 {window.location.pathname.includes('all_exercises') == true ? (

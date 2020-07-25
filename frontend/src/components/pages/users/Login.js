@@ -51,7 +51,6 @@ class Login extends Component {
 
         return (
           <div>
-            <Menu />
             <br /><br /><br />
             <form onSubmit={e => this.onSubmit(e)}>
                 <table className="table_authentication table">

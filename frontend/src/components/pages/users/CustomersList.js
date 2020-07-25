@@ -39,7 +39,6 @@ export default class CustomersList extends Component {
     render() {
         return (
             <div>
-                <Menu />
                 <br /><br />
 
                 <table id="list_customers" className="table" border="1">
@@ -86,7 +85,7 @@ export default class CustomersList extends Component {
                         ))}
                     </tbody>
                 </table>
-                <br /><br />
+                <br /><br /><br /><br /><br /><br />
             </div>
         )
 

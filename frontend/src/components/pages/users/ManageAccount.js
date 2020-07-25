@@ -51,7 +51,6 @@ export default class ManageAccount extends Component {
     render() {
         return (
             <div>
-                <Menu />
                 <br /><br /><br />
                   <table className="table_account table">
                     <thead>

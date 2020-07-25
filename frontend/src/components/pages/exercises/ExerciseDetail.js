@@ -38,7 +38,6 @@ class ExerciseDetail extends Component {
 
         return (
             <div>
-                <Menu />
                 <br /><br />
                 <table id="exercice_detail" className="table">
                     <tbody>

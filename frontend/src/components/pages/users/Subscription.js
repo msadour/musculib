@@ -68,7 +68,6 @@ class Subscription extends Component {
 
         return (
           <div>
-            <Menu />
             <br /><br /><br />
             <form onSubmit={e => this.onSubmit(e)}>
                 <table className="table_authentication table">
@@ -178,6 +177,7 @@ class Subscription extends Component {
                     </tbody>
                 </table>
             </form>
+            <br /><br /><br />
           </div>
         )
     }
