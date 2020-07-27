@@ -21,7 +21,6 @@ export default class ManageAccount extends Component {
             this.setState({ customer: data})
         })
         .catch((err) => {
-            alert("error");
             console.log(err)
         })
     }

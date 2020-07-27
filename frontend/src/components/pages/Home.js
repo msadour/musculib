@@ -22,7 +22,6 @@ export default class Home extends Component {
             this.setState({ declinations: data})
         })
         .catch((err) => {
-            alert("error");
             console.log(err)
         })
 
@@ -32,7 +31,6 @@ export default class Home extends Component {
             this.setState({ muscles: data})
         })
         .catch((err) => {
-            alert("error");
             console.log(err)
         })
     }
@@ -53,28 +51,30 @@ export default class Home extends Component {
                 <br /><br /><br />
 
                 <table style={{margin: "0 auto"}}>
-                    <tr>
-                        <th>
-                            <img style={{width: "100%"}} src="../../../../media/barbell/squat.png" />
-                        </th>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <img style={{width: "100%"}} src="../../../../media/barbell/squat.png" />
+                            </th>
 
-                        <th>
-                            <img style={{width: "100%"}} src="../../../../media/barbell/close_bench_press.png" />
-                        </th>
-                    </tr>
+                            <th>
+                                <img style={{width: "100%"}} src="../../../../media/barbell/close_bench_press.png" />
+                            </th>
+                        </tr>
 
-                    <tr>
-                        <th>
-                            <img style={{width: "100%"}} src="../../../../media/dumbbell/shoulders_press.png" />
-                        </th>
+                        <tr>
+                            <th>
+                                <img style={{width: "100%"}} src="../../../../media/dumbbell/shoulders_press.png" />
+                            </th>
 
-                        <th>
-                            <img style={{width: "100%"}} src="../../../../media/bodyweight/pull_up.png" />
-                        </th>
-                    </tr>
+                            <th>
+                                <img style={{width: "100%"}} src="../../../../media/bodyweight/pull_up.png" />
+                            </th>
+                        </tr>
+                    </tbody>
                 </table>
 
-                        <br /> <br /><br /> <br /><br /> <br />
+                <br /> <br /><br /> <br /><br /> <br />
             </div>
         )
     }

@@ -21,7 +21,6 @@ class Menu extends Component {
             this.setState({ declinations: data})
         })
         .catch((err) => {
-            alert("error");
             console.log(err)
         })
 
@@ -31,7 +30,6 @@ class Menu extends Component {
             this.setState({ muscles: data})
         })
         .catch((err) => {
-            alert("error");
             console.log(err)
         })
     }
@@ -50,7 +48,6 @@ class Menu extends Component {
             window.location.reload();
         })
         .catch(err => {
-            alert(err);
             console.log(err)
         });
     }
@@ -96,7 +93,7 @@ class Menu extends Component {
                                         <p className="nav-link nav-item text">Exercises by muscle</p>
                                         <div className="dropdown-content">
                                             <ul style={{listStyle: "none"}}>
-                                                  <li>
+                                                  <li key={0}>
                                                       <Link
                                                         to='/all_exercises'
                                                       >
@@ -105,7 +102,7 @@ class Menu extends Component {
                                                   </li>
 
                                                 {this.state.muscles.map((muscle) => (
-                                                    <li key={muscle.key} >
+                                                    <li key={muscle.id} >
                                                        <a onClick={(e) => this.updateContent(e, "/exercises/muscle/", {muscle} )}>{muscle.name}</a>
                                                     </li>
                                                 ))}
@@ -120,7 +117,7 @@ class Menu extends Component {
                                         <p className="nav-link nav-item text">Exercises by declination</p>
                                         <div className="dropdown-content">
                                             <ul style={{listStyle: "none"}}>
-                                                  <li>
+                                                  <li key={0}>
                                                       <Link
                                                         to='/all_exercises'
                                                       >
@@ -129,7 +126,7 @@ class Menu extends Component {
                                                   </li>
 
                                                 {this.state.declinations.map((declination) => (
-                                                    <li key={declination.key} >
+                                                    <li key={declination.id} >
                                                        <a onClick={(e) => this.updateContent(e, "/exercises/declination/", {declination} )}>{declination.name}</a>
                                                     </li>
                                                 ))}
@@ -193,7 +190,7 @@ class Menu extends Component {
                                         <p className="nav-link nav-item text">Exercises by muscle</p>
                                         <div className="dropdown-content">
                                             <ul style={{listStyle: "none"}}>
-                                                  <li>
+                                                  <li key={0}>
                                                       <Link
                                                         to='/all_exercises'
                                                       >
@@ -202,7 +199,7 @@ class Menu extends Component {
                                                   </li>
 
                                                 {this.state.muscles.map((muscle) => (
-                                                    <li key={muscle.key} >
+                                                    <li key={muscle.id}>
                                                        <a className="text" onClick={(e) => this.updateContent(e, "/exercises/muscle/", {muscle} )}>{muscle.name}</a>
                                                     </li>
                                                 ))}
@@ -217,7 +214,7 @@ class Menu extends Component {
                                         <p className="nav-link nav-item text">Exercises by declination</p>
                                         <div className="dropdown-content">
                                             <ul style={{listStyle: "none"}}>
-                                                  <li>
+                                                  <li key={0}>
                                                       <Link
                                                         to='/all_exercises'
                                                       >
@@ -226,7 +223,7 @@ class Menu extends Component {
                                                   </li>
 
                                                 {this.state.declinations.map((declination) => (
-                                                    <li key={declination.key} >
+                                                    <li key={declination.id} >
                                                        <a className="text" onClick={(e) => this.updateContent(e, "/exercises/declination/", {declination} )}>{declination.name}</a>
                                                     </li>
                                                 ))}

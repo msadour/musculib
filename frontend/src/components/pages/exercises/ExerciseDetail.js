@@ -22,7 +22,6 @@ class ExerciseDetail extends Component {
             this.setState({ exercise: data})
         })
         .catch((err) => {
-            alert("error");
             console.log(err)
         })
     }

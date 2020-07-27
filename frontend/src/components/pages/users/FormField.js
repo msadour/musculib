@@ -122,7 +122,7 @@ class FormField extends Component {
             break;
 
             default :
-                alert('error');
+                console.log('error');
         }
 
     }

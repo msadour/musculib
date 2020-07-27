@@ -19,7 +19,6 @@ export default class CustomersList extends Component {
             this.setState({ customers: data})
         })
         .catch((err) => {
-            alert("error");
             console.log(err)
         })
     }
